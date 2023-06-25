@@ -1,0 +1,151 @@
+.splash {
+    background-image: url('./Images/home/splash.jpg');
+    animation-name: fadeOut;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+.container {
+    position: fixed;
+    background: linear-gradient(180deg, #fa8c61 0%, rgba(243, 144, 105, 0.875) 24.48%, rgba(246, 155, 116, 0.88) 46.35%, rgba(247, 155, 116, 0.89) 60.42%, rgba(179, 132, 113, 0.90568) 70.83%, rgba(101, 80, 71, 0.966262) 88.54%, #39332F 100%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+
+.back-img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 35%;
+}
+
+.logo-btn {
+    position: absolute;
+    margin: 1rem;
+    display: flex;
+}
+
+.topic {
+    text-align: center;
+
+}
+
+.topic-main {
+    /* background-color: aliceblue; */
+    width: 20rem;
+    height: 3.5rem;
+    background: linear-gradient(180deg, #720000 0%, rgba(114, 0, 0, 0.869792) 26.56%, rgba(114, 0, 0, 0.771092) 47.92%, rgba(114, 0, 0, 0.686272) 61.46%, rgba(114, 0, 0, 0.584258) 73.44%, rgba(114, 0, 0, 0.515522) 78.65%, rgba(114, 0, 0, 0.389785) 87.5%, rgba(114, 0, 0, 0.30858) 91.15%, rgba(114, 0, 0, 0.30858) 97.4%, rgba(114, 0, 0, 0) 100%);
+    border-radius: 35px;
+    color: white;
+    display: flex;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 40rem;
+}
+
+.topic-img {
+    width: 1.9rem;
+    height: 1.4rem;
+    margin-top: 0.9rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.option {
+    background: linear-gradient(180deg, #966148 0%, #3C3635 100%);
+    border-radius: 15px;
+    position: absolute;
+    width: 16rem;
+    height: 24rem;
+    margin-top: 15rem;
+    margin-left: 5rem;
+}
+.propic {
+    position: absolute;
+    width: 10rem;
+    margin: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.95rem;
+}
+.people {
+    position: absolute;
+    align-items: center;
+    margin-left: 4rem;
+}.name-bar{
+    height: 2rem;
+    margin-top: 13rem;
+    margin-left: 1.4rem;
+    background: #DCCE50;
+    border-radius: 15px;
+    width: 13rem;
+}
+
+.details{
+    text-align: center;
+    padding-top: 0.35rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+.name{
+    color: beige;
+    text-shadow: 0px 4px 4px #000000;
+    text-align: center;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}.category-logo{
+    display: flex;
+}
+.cat-logo{
+    height: 1.7rem;
+    margin-top: 2.35rem; 
+    margin-left: 1rem;   
+}
+.student{
+    width: 7rem;
+    height: 1.7rem;
+    background: #FF9900;
+    border-radius: 15px;
+    margin-top: 2.3rem;
+    margin-left: 0.9rem;
+}
+.text{
+    margin-top: 0.31rem;
+    margin-left: 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.11rem;
+    font-family: 'Poppins', sans-serif;
+}
+.op2 {
+    margin-left: 25rem;
+}
+.op3{
+    margin-left: 45rem;
+}
+.op4{
+    margin-left: 65rem;
+}
