@@ -2,3 +2,7 @@
    font-family: 'Raleway', sans-serif;
 }
 
+.container{
+ display: flex;   
+}
+
