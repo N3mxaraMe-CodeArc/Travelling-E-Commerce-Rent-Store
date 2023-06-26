@@ -23,7 +23,7 @@
   margin-left: 1.3rem;
   margin-top: 0.6rem;
   border-radius: 25px;
-  background-color: rgba(153, 158, 161, 0.459);
+  background-color: rgba(153, 158, 161, 0.493);
 }
 
 .header {
@@ -54,7 +54,7 @@
 
 .maintopic {
   font-size: 30px;
-  color: #00497c;
+  color: #0a3d55;
   font-weight: 800;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.568);
 }
@@ -154,6 +154,8 @@
   box-shadow: 0px 4px 4px 0px #00000083;
   padding-left: 1rem;
   padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .topic {
