@@ -1,0 +1,40 @@
+*{
+   font-family: 'Kablammo', cursive;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: #20152d;
+}
+
+.rating{
+   position: relative;
+   display: flex;
+   flex-direction: row-reverse;
+}
+
+.rating input{
+   display: none;
+}
+
+.rating label{
+   position: relative;
+   width: 0;
+   height: 128px;
+   cursor: pointer;
+   transition: 0.5s;
+   filter: grayscale(1);
+   text-align: center;
+   opacity: 0;
+}
+
+.rating:hover label{
+   width: 160px;
+   opacity: 0.2;
+}
