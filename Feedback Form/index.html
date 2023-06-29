@@ -12,7 +12,7 @@
   </head>
   <body>
     <div class="container">
-      <video class="mainimage active" src="../Feedback Form/Sri Lanka - Heart of the Indian Ocean_Full-HD.mp4/" autoplay muted loop></video>
+      <video class="mainimage active" src="hiking videos/Sri Lanka - Heart of the Indian Ocean_Full-HD.mp4" autoplay muted loop></video>
       <div class="subcontainer">
         <div class="header">
           <img src="../home/logo.png" alt="" class="logo" />
@@ -44,14 +44,14 @@
         <div class="starrating">
           <h3 class="ratetopic">Rate Us</h3>
           <div class="stars">
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
+            <img onclick="changeImage(1)" src="../Images/form/star.png" alt="" class="star" id="star1" />
+            <img onclick="changeImage(2)" src="../Images/form/star.png" alt="" class="star" id="star2"/>
+            <img onclick="changeImage(3)" src="../Images/form/star.png" alt="" class="star" id="star3"/>
+            <img onclick="changeImage(4)" src="../Images/form/star.png" alt="" class="star" id="star4"/>
+            <img onclick="changeImage(5)" src="../Images/form/star.png" alt="" class="star" id="star5"/>
           </div>
           <div class="thanks">
-            <p class="thanks">Thanks For the Rating..!</p>
+            <p class="thanks" id="rateus">Click to Rate.!</p>
           </div>
           <div class="rateform">
             <p class="topic">Why are you rating us :</p>
@@ -111,12 +111,15 @@
           </div>
         </div>
         <div class="btn">
-          <button class="btn-nxt">
-            <p class="next">Next</p>
-            <img class="arrow" src="../Images/form/arrow_forward.png" alt="" />
-          </button>
+          <a href="#">
+            <button class="btn-nxt">
+              <p class="next">Next</p>
+              <img class="arrow" src="../Images/form/arrow_forward.png" alt="" />
+            </button>
+          </a>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
