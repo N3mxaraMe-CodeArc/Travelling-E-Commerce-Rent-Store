@@ -12,31 +12,41 @@
   </head>
   <body>
     <div class="container">
-      <video class="mainimage active" src="hiking videos/Sri Lanka - Heart of the Indian Ocean_Full-HD.mp4" autoplay muted loop></video>
+      <video
+        class="mainimage active"
+        src="hiking videos/Sri Lanka - Heart of the Indian Ocean_Full-HD.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
       <div class="subcontainer">
         <div class="header">
           <img src="../home/logo.png" alt="" class="logo" />
           <div class="topic">
             <h2 class="maintopic">Website Feedback form</h2>
-            <p class="subtopic">Code Arcade team</p> 
+            <p class="subtopic">Code Arcade team</p>
           </div>
           <img src="../Images/form/reviews.png" alt="" class="logoimg" />
         </div>
         <div class="textfeilds">
           <div class="name">
-            <p class="title">Name :</p>
+            <label for="name" class="title">Name :</label>
             <input
               type="text"
               placeholder="Enter your Name"
               class="nametextfield"
+              required
             />
           </div>
           <div class="email :">
-            <p class="title">Email : </p>
+            <label for="email" class="title">Email :</label>
             <input
               type="email"
               class="nametextfield"
               placeholder="Enter your Email"
+              id="email"
+              name="email"
+              required
             />
           </div>
         </div>
@@ -44,11 +54,41 @@
         <div class="starrating">
           <h3 class="ratetopic">Rate Us</h3>
           <div class="stars">
-            <img onclick="changeImage(1)" src="../Images/form/star.png" alt="" class="star" id="star1" />
-            <img onclick="changeImage(2)" src="../Images/form/star.png" alt="" class="star" id="star2"/>
-            <img onclick="changeImage(3)" src="../Images/form/star.png" alt="" class="star" id="star3"/>
-            <img onclick="changeImage(4)" src="../Images/form/star.png" alt="" class="star" id="star4"/>
-            <img onclick="changeImage(5)" src="../Images/form/star.png" alt="" class="star" id="star5"/>
+            <img
+              onclick="changeImage(1)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star1"
+            />
+            <img
+              onclick="changeImage(2)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star2"
+            />
+            <img
+              onclick="changeImage(3)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star3"
+            />
+            <img
+              onclick="changeImage(4)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star4"
+            />
+            <img
+              onclick="changeImage(5)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star5"
+            />
           </div>
           <div class="thanks">
             <p class="thanks" id="rateus">Click to Rate.!</p>
@@ -73,7 +113,6 @@
                 <input type="checkbox" class="checkbox" name="no" />
                 <label for="Yes">Yes</label>
               </div>
-
               <div class="topiccheck">
                 <input type="checkbox" class="checkbox" name="no" />
                 <label for="No">No</label>
@@ -111,10 +150,14 @@
           </div>
         </div>
         <div class="btn">
-          <a href="#">
+          <a class="btnlink" href="#">
             <button class="btn-nxt">
               <p class="next">Next</p>
-              <img class="arrow" src="../Images/form/arrow_forward.png" alt="" />
+              <img
+                class="arrow"
+                src="../Images/form/arrow_forward.png"
+                alt=""
+              />
             </button>
           </a>
         </div>
