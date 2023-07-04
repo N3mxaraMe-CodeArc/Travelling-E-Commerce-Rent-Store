@@ -7,53 +7,91 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>FEEDBACK FORM</title>
   </head>
   <body>
     <div class="container">
+      <video
+        class="mainimage active"
+        src="hiking videos/Sri Lanka - Heart of the Indian Ocean_Full-HD.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
       <div class="subcontainer">
         <div class="header">
-          <div class="mainlogo">
-            <img src="../Images/home/logo.png" alt="" class="logo" />
-          </div>
+          <img src="../home/logo.png" alt="" class="logo" />
           <div class="topic">
             <h2 class="maintopic">Website Feedback form</h2>
             <p class="subtopic">Code Arcade team</p>
           </div>
-          <div class="logo.feed">
-            <img src="../Images/form/reviews.png" alt="" class="logoimg" />
-          </div>
+          <img src="../Images/form/reviews.png" alt="" class="logoimg" />
         </div>
         <div class="textfeilds">
           <div class="name">
-            <p class="title">Name :</p>
+            <label for="name" class="title">Name :</label>
             <input
               type="text"
               placeholder="Enter your Name"
               class="nametextfield"
+              required
             />
           </div>
-          <div class="email">
-            <p class="title">Email</p>
+          <div class="email :">
+            <label for="email" class="title">Email :</label>
             <input
               type="email"
               class="nametextfield"
               placeholder="Enter your Email"
+              id="email"
+              name="email"
+              required
             />
           </div>
         </div>
         <hr />
         <div class="starrating">
+          <h3 class="ratetopic">Rate Us</h3>
           <div class="stars">
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
-            <img src="../Images/form/star.png" alt="" class="star" />
+            <img
+              onclick="changeImage(1)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star1"
+            />
+            <img
+              onclick="changeImage(2)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star2"
+            />
+            <img
+              onclick="changeImage(3)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star3"
+            />
+            <img
+              onclick="changeImage(4)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star4"
+            />
+            <img
+              onclick="changeImage(5)"
+              src="../Images/form/star.png"
+              alt=""
+              class="star"
+              id="star5"
+            />
           </div>
           <div class="thanks">
-            <p class="thanks">Thanks For the Rating..!</p>
+            <p class="thanks" id="rateus">Click to Rate.!</p>
           </div>
           <div class="rateform">
             <p class="topic">Why are you rating us :</p>
@@ -70,34 +108,61 @@
         <div class="feedback">
           <div class="option1">
             <p class="que1">Are you new to this website.?</p>
-            <input type="checkbox" class="checkbox" name="no" />
-            <label for="Yes">Yes</label>
-            <input type="checkbox" class="checkbox" name="no" />
-            <label for="No">No</label>
+            <div class="ele-op">
+              <div class="ckeckbox">
+                <input type="checkbox" class="checkbox" name="no" />
+                <label for="Yes">Yes</label>
+              </div>
+              <div class="topiccheck">
+                <input type="checkbox" class="checkbox" name="no" />
+                <label for="No">No</label>
+              </div>
+            </div>
           </div>
 
           <div class="option2">
             <p class="que1">Are you new to this website.?</p>
-            <input type="checkbox" class="checkbox" name="no" />
-            <label for="Yes">Yes</label>
-            <input type="checkbox" class="checkbox" name="no" />
-            <label for="No">No</label>
+            <div class="ele-op">
+              <div class="ckeckbox">
+                <input type="checkbox" class="checkbox" name="no" />
+                <label for="Yes">Yes</label>
+              </div>
+
+              <div class="topiccheck">
+                <input type="checkbox" class="checkbox" name="no" />
+                <label for="No">No</label>
+              </div>
+            </div>
           </div>
           <div class="option3">
             <p class="que1">Are you new to this website.?</p>
-            <input type="checkbox" class="checkbox" name="no" />
-            <label for="Yes">Yes</label>
-            <input type="checkbox" class="checkbox" name="no" />
-            <label for="No">No</label>
+            <div class="ele-op">
+              <div class="ckeckbox">
+                <input type="checkbox" class="checkbox" name="yes" />
+                <label for="Yes">Yes</label>
+              </div>
+
+              <div class="topiccheck">
+                <input type="checkbox" class="checkbox" name="no" />
+                <label for="No">No</label>
+              </div>
+            </div>
           </div>
         </div>
         <div class="btn">
-          <button class="btn-nxt">
-            <p class="next">Next</p>
-            <img class="arrow" src="../Images/form/arrow_forward.png" alt="" />
-          </button>
+          <a class="btnlink" href="#">
+            <button class="btn-nxt">
+              <p class="next">Next</p>
+              <img
+                class="arrow"
+                src="../Images/form/arrow_forward.png"
+                alt=""
+              />
+            </button>
+          </a>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
