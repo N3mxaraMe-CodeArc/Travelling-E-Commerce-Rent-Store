@@ -1,9 +1,12 @@
 function removeSplashScreen() {
     var splash = document.querySelector('.splash');
     splash.parentNode.removeChild(splash);
+    window.location.replace("cart.html");
   }
-  setTimeout(removeSplashScreen, 4000);
-  
-  setTimeout(function() {
-    window.location.href = "index.html";
-  }, 2000);
+
+setTimeout(removeSplashScreen, 4000);
+
+
+  // setTimeout(function() {
+    
+  // }, 1000);
