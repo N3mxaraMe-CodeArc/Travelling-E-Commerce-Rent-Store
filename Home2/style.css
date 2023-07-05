@@ -1,7 +1,6 @@
 * {
   font-family: "Roboto", sans-serif;
   margin-left: 0.5rem;
-  margin-bottom: 1rem;
   background-color: #00424d;
   margin-top: 0.5rem;
 }
@@ -64,8 +63,8 @@ nav ul {
   color: white;
   font-weight: 600;
   letter-spacing: 0.2rem;
-  font-size: 1.8rem;
-  margin-top: 1rem;
+  font-size: 1.7rem;
+  margin-top: 0;
   line-height: 3rem;
   text-align: center;
 }
@@ -203,4 +202,41 @@ nav ul {
 .main-topic-blog{
   display: flex;
   flex-direction: column;
+}
+
+
+/* //===================================================================== */
+
+.img-place{
+  height: 14rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.imgplace{
+  display: flex;
+}
+
+.topic-card{
+  position: relative;
+  background: none;
+  margin-left: 3.6rem;
+  margin-top: 10rem;
+  color: white;
+  letter-spacing: 3px;
+}
+.tranding-slide{
+  padding: 1rem;
+  background: none;
+}
+.tranding-slide:hover{
+  transform: scale(1.04);
+  transition: 1s ease;
+}
+.tranding-slider-control{
+  display: flex;
+  cursor: pointer;
+  color: #fcfffc;
+  margin-top: 17rem;
+  margin-left: 15rem;
 }
