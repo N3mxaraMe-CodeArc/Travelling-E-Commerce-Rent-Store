@@ -12,6 +12,13 @@ header{
   grid-template-columns: 1fr 50px;
   margin-top: 50px;
 }
+.logo-btn {
+  position: absolute;
+  margin-left: -15rem;
+  display: flex;
+  width: 8.5rem;
+  height: 8rem;
+}
 header .shopping{
   position: relative;
   text-align: right;
