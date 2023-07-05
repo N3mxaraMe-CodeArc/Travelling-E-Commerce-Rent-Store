@@ -1,8 +1,8 @@
 .splash {
     background-image: url('./Images/home/splash.jpg');
     animation-name: fadeOut;
-    animation-duration: 4s;
-    animation-delay: 4s;
+    animation-duration: 3s;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
   }
   @keyframes fadeOut {
@@ -17,7 +17,8 @@
 
 .container {
     position: fixed;
-    background: linear-gradient(180deg, #fa8c61 0%, rgba(243, 144, 105, 0.875) 24.48%, rgba(246, 155, 116, 0.88) 46.35%, rgba(247, 155, 116, 0.89) 60.42%, rgba(179, 132, 113, 0.90568) 70.83%, rgba(101, 80, 71, 0.966262) 88.54%, #39332F 100%);
+    background-color: #00424d;
+    /* background: linear-gradient(180deg, #00424d 0%, rgba(4, 174, 221, 0.875) 24.48%, rgba(8, 15, 224, 0.88) 46.35%, rgba(15, 36, 227, 0.89) 60.42%, rgba(20, 4, 235, 0.906) 70.83%, rgba(27, 5, 227, 0.966) 88.54%, #0404d8 100%); */
     width: 100%;
     height: 100%;
     top: 0;
@@ -38,6 +39,8 @@
     position: absolute;
     margin: 1rem;
     display: flex;
+    width: 8.5rem;
+    height: 8rem;
 }
 
 .topic {
