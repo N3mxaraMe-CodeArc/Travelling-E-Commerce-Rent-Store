@@ -1,6 +1,5 @@
 body{
-  background-color: rgb(163, 223, 247);
-  /* background: linear-gradient(180deg, #fa8c61 0%, rgba(243, 144, 105, 0.875) 24.48%, rgba(246, 155, 116, 0.88) 46.35%, rgba(247, 155, 116, 0.89) 60.42%, rgba(179, 132, 113, 0.90568) 70.83%, rgba(101, 80, 71, 0.966262) 88.54%, #39332F 100%); */
+  background-color: #00424d;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .container{
@@ -89,7 +88,7 @@ header .shopping span{
   text-align: center;
   background-color: rgb(213, 218, 218);
   padding: 20px;
-  box-shadow: 0 50px #afebeb;
+  box-shadow: 0 50px #00424d;
   letter-spacing: 1px;
 }
 .list .item img{
