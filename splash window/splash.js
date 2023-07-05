@@ -1,22 +1,13 @@
 function removeSplashScreen() {
-    var splash = document.querySelector('.splash');
+  var splash = document.querySelector('.splash');
+  if (splash) {
     splash.parentNode.removeChild(splash);
-    window.location.href = "../Home2/index.html";
+    window.location.replace("cart.html");
   }
+
 setTimeout(removeSplashScreen, 4000);
 
 
   // setTimeout(function() {
     
   // }, 1000);
-
-// function transitionToMainPage() {
-//   setTimeout(function() {
-//     window.location.href = "../home/index.html";
-//   },4000); 
-// }
-
-
-// window.onload = function() {
-//   transitionToMainPage();
-// };
