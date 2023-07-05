@@ -107,6 +107,13 @@ nav ul {
 
 .blog-items {
   display: flex;
+  position: absolute;
+  background: none;
+  margin-top: 8rem;
+}
+
+.swiper-wrapper{
+  display: flex;
 }
 
 .card {
@@ -161,7 +168,7 @@ nav ul {
 }
 
 .card:hover:after {
-  content: "HELL";
+  content: "Click";
 }
 
 .txt-topic {
@@ -178,6 +185,8 @@ nav ul {
   background: none;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.336);
   margin-top: 10rem;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
 }
 .herosection{
   display: flex;
@@ -187,6 +196,11 @@ nav ul {
 .mainlogo{
   width: 35rem;
   height: 25rem;
-  position: relative;
-  z-index: 1;
+  padding-left: 10rem;
+  margin-right: 0;
+}
+
+.main-topic-blog{
+  display: flex;
+  flex-direction: column;
 }
