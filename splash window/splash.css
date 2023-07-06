@@ -17,8 +17,7 @@
 
 .container {
     position: fixed;
-    background-color: #00424d;
-    /* background: linear-gradient(180deg, #00424d 0%, rgba(4, 174, 221, 0.875) 24.48%, rgba(8, 15, 224, 0.88) 46.35%, rgba(15, 36, 227, 0.89) 60.42%, rgba(20, 4, 235, 0.906) 70.83%, rgba(27, 5, 227, 0.966) 88.54%, #0404d8 100%); */
+    background: linear-gradient(180deg, #02454F 0%, #025D6A 13.54%, #037586 21.88%, #037688 28.65%, #037889 35.94%, #038699 68.75%, #038699 68.76%, #037D8F 77.08%, #026D7D 84.90%, #002E35 100%);
     width: 100%;
     height: 100%;
     top: 0;
@@ -38,26 +37,32 @@
 .logo-btn {
     position: absolute;
     margin: 1rem;
+    margin-left: 85%;
     display: flex;
     width: 8.5rem;
     height: 8rem;
 }
+.logo{
+    border-radius: 50px;
+}
 
 .topic {
     text-align: center;
-
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1.1rem;
+    font-weight: 600;
 }
 
 .topic-main {
-    /* background-color: aliceblue; */
     width: 20rem;
     height: 3.5rem;
-    background: linear-gradient(180deg, #720000 0%, rgba(114, 0, 0, 0.869792) 26.56%, rgba(114, 0, 0, 0.771092) 47.92%, rgba(114, 0, 0, 0.686272) 61.46%, rgba(114, 0, 0, 0.584258) 73.44%, rgba(114, 0, 0, 0.515522) 78.65%, rgba(114, 0, 0, 0.389785) 87.5%, rgba(114, 0, 0, 0.30858) 91.15%, rgba(114, 0, 0, 0.30858) 97.4%, rgba(114, 0, 0, 0) 100%);
+    background: linear-gradient(180deg, #1A8C9A 0%, #17818E 31.77%, #147580 52.08%, #0F5E68 87.49%, #04353B 87.50%);
     border-radius: 35px;
     color: white;
     display: flex;
     position: absolute;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 40rem;
 }
 
@@ -70,7 +75,7 @@
 }
 
 .option {
-    background: linear-gradient(180deg, #966148 0%, #3C3635 100%);
+    background: linear-gradient(180deg,#00424C 0%, #0B5561 20%, #0E5B67 40%, #11616E 50%, #136572 60%, #166A76 80%, #19707D 90%, #3099A9 100%);
     border-radius: 15px;
     position: absolute;
     width: 16rem;
@@ -93,12 +98,13 @@
     height: 2rem;
     margin-top: 13rem;
     margin-left: 1.4rem;
-    background: #DCCE50;
+    background: #002640;;
     border-radius: 15px;
     width: 13rem;
 }
 
 .details{
+    color:white;
     text-align: center;
     padding-top: 0.35rem;
     font-weight: 700;
