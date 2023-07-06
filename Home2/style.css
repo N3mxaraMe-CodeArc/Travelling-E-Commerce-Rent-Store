@@ -353,3 +353,11 @@ nav ul {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+.feedbacks{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+}
