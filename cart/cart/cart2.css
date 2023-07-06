@@ -14,6 +14,88 @@ body {
     display: flex;
     flex-direction: column;
   }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  hr{
+    height: 0.2rem;
+    border: none;
+    background-color: #000;
+  }
+
+
+/* -----------------------------nav bar-------------------------------- */
+.logo {
+  height: 7rem;
+  cursor: pointer;
+}
+
+.navlinks-group {
+  display: flex;
+  justify-content: end;
+  margin-left: 30rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-top: 2.7rem;
+}
+
+.nav-links {
+  color: white;
+  padding-left: 1rem;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.nav-links:hover,
+nav ul li a:hover {
+  color: aqua;
+  transform: scale(1.09);
+  transition: 0.5s ease;
+  --_p: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  --s: 0.1em;
+  --c: aqua;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+nav ul {
+  list-style: none;
+}
+header .shopping{
+  position: relative;
+  text-align: right;
+}
+header .shopping img{
+  width: 40px;
+  margin-top: 31px;
+}
+header .shopping span{
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  margin-top: 32px;
+  left: 80%;
+  padding: 2px 8px;
+}
+/* -------------------------------------------------------------------- */
+
   .card {
     height: 440px;
     width: 20%;
@@ -39,7 +121,7 @@ body {
     > button {
       height: 55px;
       border-radius: 5px;
-      background: #87bfff;
+    background: #00424d;
       color: white;
       font-size: 1.2rem;
       font-weight: bold;
@@ -48,15 +130,15 @@ body {
     }
     > button:hover {
       cursor: pointer;
-      background: #87bfff;
+      background: #698a80;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
     }
   }
   .card:hover {
     cursor: pointer;
-    animation: scaleup 0.4s forwards;
+    animation: scaleup 0.3s forwards;
     > img {
-      animation: rotate 0.2s forwards;
+      animation: rotate 0.1s forwards;
     }
   }
   @keyframes rotate {
@@ -77,8 +159,8 @@ body {
     50% {
       transform: scale(1.05);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2),
-        0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px #87bfff, 0 0 70px #87bfff,
-        0 0 80px #87bfff, 0 0 100px #87bfff, 0 0 150px #87bfff;
+        0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px #04331d, 0 0 70px #02422e,
+        0 0 80px #024029, 0 0 100px #024130, 0 0 150px #014432;
     }
     100% {
       transform: scale(1);

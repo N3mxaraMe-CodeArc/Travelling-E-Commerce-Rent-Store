@@ -8,18 +8,32 @@
     <link rel="icon" href="./image/logo.png" type="image/png">    
 </head>
 <body>
-<div class="header">
-    <img src="./image/logo.png" alt="logo-image" class="logo">
-</div>    
+<header>
+    <img src="./image/logo.png" class="logo"/>
+        <nav class="navlinks">
+          <ul class="navlinks-group">
+            <li class="nav-links"><a href="#">home</a></li>
+            <li class="nav-links"><a href="#">shop</a></li>
+            <li class="nav-links"><a href="#">thumbnail</a></li>
+            <li class="nav-links"><a href="#">sitemap</a></li>
+            <li class="nav-links"><a href="#">aboutus</a></li>
+          </ul>
+        </nav>
+        <div class="shopping">
+            <img src="./image/shopping.svg" alt="">
+            <span class="quantity">0</span>
+          </div>
+      </header>
+<hr>  
 <div class="container">
     <div class="first-row">
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>70L-Professional-Mountaineering-Bag</h4>
             <img src="./image/1.png" alt="">
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
         </div>
         <div class="card">
-           <h4>80L-Professional-Waterproof-Men-Duffel-Bag</h4>
+           <h4>Professional-Waterproof-Mens-Bag</h4>
            <img src="./image/2.png" alt="">
            <button class="cart">ADD TO CART</button>
         </div>
@@ -71,17 +85,16 @@
             <button class="cart">ADD TO CART</button>
         </div>
         <div class="card">
-            <h4> 'Outdoor-Telescope-100x22-High-Power</h4>
+            <h4>Outdoor-Telescope-100x22r</h4>
             <img src="./image/11.png" alt="">
             <button class="cart">ADD TO CART</button>
         </div>
         <div class="card">
-            <h4>Backpack-Style-Multi-Bag-Foldable-Stool</h4>
+            <h4>Backpack-Style-Multi-Foldable-Stool</h4>
             <img src="./image/12.png" alt="">
             <button class="cart">ADD TO CART</button>
         </div>
     </div>
-    
 </div>    
 </body>
 </html>

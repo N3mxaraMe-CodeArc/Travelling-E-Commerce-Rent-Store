@@ -6,12 +6,15 @@ let body = document.querySelector('body');
 let total = document.querySelector('.total');
 let quantity = document.querySelector('.quantity');
 
+
 openShopping.addEventListener('click', ()=>{
     body.classList.add('active');
 })
+
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
+
 let products =[
     {
         id: 1,
