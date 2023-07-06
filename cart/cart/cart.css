@@ -108,8 +108,8 @@ header .shopping span{
   margin: 10px;
 }
 .list .item button{
-  background-color: #1C1F25;
-  color: #c3bebe;
+  background-color: #eaecf0;
+  color: #1f1e1e;
   padding: 10px;
   width: 100%;
 }
@@ -130,9 +130,25 @@ header .shopping span{
 }
 .listCard button{
   width: auto;
-  background-color: #a2a5a8;
+  background-color: #262727;
   border-radius: 10px;
 }
 .listCard .count{
   margin: 0 10px;
+}
+.cart{
+  font-family: 'IBM Plex Mono';
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #202020;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  border: solid 0.125rem #242323;
+  box-shadow: 0.25rem 0.25rem #232323;
+  transition: 
+     transform 50ms, box-shadow 50ms;
+}
+.cart:active{
+  transform: translate(00.125rem,0.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
 }

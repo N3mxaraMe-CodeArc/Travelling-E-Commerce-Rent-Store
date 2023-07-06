@@ -1,13 +1,10 @@
 function removeSplashScreen() {
   var splash = document.querySelector('.splash');
-  if (splash) {
-    splash.parentNode.removeChild(splash);
-    window.location.replace("cart.html");
-  }
-
+  splash.parentNode.removeChild(splash);
+  window.location.href="../Home2/index.html"
+}
 setTimeout(removeSplashScreen, 4000);
-
-
-  // setTimeout(function() {
-    
-  // }, 1000);
+document.addEventListener("DOMContentLoaded", function() {
+  var audio = document.getElementById("bg-music");
+  audio.play();
+});

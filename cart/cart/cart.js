@@ -95,7 +95,7 @@ function initApp(){
         <img src ="image/${value.image}"/>
         <div class ="title">${value.name}</div>
         <div class ="price">${value.price.toLocaleString()}</div>
-        <button onclick ="addToCart(${key})">Add To Cart</button>
+        <button class="cart" onclick ="addToCart(${key})">Add To Cart</button>
         `;
         list.appendChild(newDiv);
     })
@@ -122,10 +122,11 @@ function reloadCard(){
             <div>${value.name}</div>
             <div>${value.price.toLocaleString()}</div>
             <div>
-                 <button onclick = "changeQuantity(${key},${value.quantity-1}">-<button>
-                 <div class ="count">${value.quantity}</div>
-                 <button onclick = "changeQuantity(${key},${value.quantity+1}">+<button>
-            </div> `;
+                <button onclick = "changeQuantity(${key},${value.quantity-1}">-<button>
+                <div class ="count">${value.quantity}</div>
+                <button onclick = "changeQuantity(${key},${value.quantity+1}">+<button>
+            </div> 
+            `;
             listCard.appendChild(newDiv);
         }
     })
