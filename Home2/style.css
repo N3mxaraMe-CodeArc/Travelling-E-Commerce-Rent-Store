@@ -6,13 +6,24 @@
 }
 
 p{
-
+  font-family: 'Merienda', cursive;
 }
 
 header {
   display: flex;
 }
 
+h1{
+  font-family: 'Kreon', serif;
+}
+
+h3{
+  font-family: 'Grandstander', cursive;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
 
 .logo {
   height: 7rem;
@@ -297,5 +308,48 @@ nav ul {
 
 .discription{
   margin: 4rem;
-  border: #000 solid;
+  margin-top: 6rem;
+  border: #ffffff solid;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+
+.paragraph{
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.headingyt{
+  margin-left: 34rem;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 6rem;
+}
+
+.frame{
+  border: white solid;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 1.2rem;
+}
+
+.frame:hover{
+  transform: scale(1.04);
+  transition: 1s ease;
+  box-shadow: 0px 4px 0px 0px #ffffff;
+}
+
+.one-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iframe-heading{
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }

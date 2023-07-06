@@ -14,6 +14,6 @@ var showText = function(target, message, index, interval) {
      "breathtaking mountains, you'll be captivated by the stunning " +
      "landscapes that surround you. The verdant hills adorned with " +
      "cascading waterfalls create a symphony of sights and sounds, " +
-     "offering a soothing escape from the bustling city life.", 0, 25);
+     "offering a soothing escape from the bustling city life.", 0, 35);
  };
  
