@@ -124,6 +124,7 @@ nav ul {
   display: flex;
   justify-content: flex-start;
 }
+
 .heading {
   color: white;
   font-weight: 600;
@@ -242,7 +243,6 @@ nav ul {
   letter-spacing: 0.1rem;
   color: white;
   text-transform: uppercase;
-  
 }
 
 .text{
@@ -252,9 +252,9 @@ nav ul {
   font-size: 1.2rem;
   letter-spacing: 4px;
 }
+
 .herosection{
   display: flex;
-
 }
 
 .mainlogo{
@@ -290,10 +290,12 @@ nav ul {
   color: white;
   letter-spacing: 3px;
 }
+
 .tranding-slide{
   padding: 1rem;
   background: none;
 }
+
 .tranding-slide:hover{
   transform: scale(1.04);
   transition: 1s ease;
