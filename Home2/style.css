@@ -320,11 +320,11 @@ nav ul {
 
 .slider{
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   transform-style: preserve-3d;
   animation: rotate 30s linear infinite;
-  margin-left: 35rem;
+  margin-left: 33rem;
   margin-top: 8rem;
 }
 
