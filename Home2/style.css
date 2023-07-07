@@ -208,10 +208,11 @@ nav ul {
 }
 
 .mainlogo {
-  width: 35rem;
-  height: 25rem;
-  padding-left: 6rem;
-  margin-right: 0;
+  position: absolute;
+  background: none;
+  width: 39rem;
+  height: 28rem;
+  margin-left: 43rem;
 }
 
 .main-topic-blog {
@@ -221,23 +222,35 @@ nav ul {
 
 /* //===================================================================== */
 
-.hero-logo{
+.hero-logo {
   display: flex;
 }
-
-.img-place{
-  width: 10rem;
-}
-
-.topic-card{
+.imgplace {
   position: relative;
 }
 
-.img-place:hover{
+.img-place {
+  width: 10rem;
+}
+
+.topic-card {
+  text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  background: none;
+  bottom: 10px;
+  margin-left: 2.5rem;
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-shadow: 0 2px 2px 0 #000;
+  letter-spacing: 2px;
+}
+
+.img-place:hover {
   transform: scale(1.1);
   transition: 1s ease;
 }
-
 
 .discription {
   margin: 4rem;
@@ -288,7 +301,7 @@ nav ul {
   text-transform: uppercase;
 }
 
-.gallery{
+.gallery {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -299,7 +312,7 @@ nav ul {
   overflow: hidden;
 }
 
-.slider{
+.slider {
   position: relative;
   width: 250px;
   height: 250px;
@@ -309,16 +322,16 @@ nav ul {
   margin-top: 8rem;
 }
 
-@keyframes rotate{
-  0%{
+@keyframes rotate {
+  0% {
     transform: perspective(1000px) rotateY(0deg);
   }
-  100%{
+  100% {
     transform: perspective(1000px) rotateY(360deg);
   }
 }
 
-.slider span{
+.slider span {
   position: absolute;
   top: 0;
   left: 0;
@@ -326,10 +339,10 @@ nav ul {
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
-  transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
 }
 
-.slider span img{
+.slider span img {
   position: absolute;
   top: 0;
   left: 0;
@@ -340,10 +353,9 @@ nav ul {
   transition: 2s;
 }
 
-.slider span:hover img{
+.slider span:hover img {
   transform: translateY(-30px) scale(1.2);
 }
-
 
 .form {
   position: relative;
@@ -413,7 +425,22 @@ nav ul {
 }
 
 .form button:hover {
-  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 82, 82),
+    rgb(250, 82, 82) 16.65%,
+    rgb(190, 75, 219) 16.65%,
+    rgb(190, 75, 219) 33.3%,
+    rgb(76, 110, 245) 33.3%,
+    rgb(76, 110, 245) 49.95%,
+    rgb(64, 192, 87) 49.95%,
+    rgb(64, 192, 87) 66.6%,
+    rgb(250, 176, 5) 66.6%,
+    rgb(250, 176, 5) 83.25%,
+    rgb(253, 126, 20) 83.25%,
+    rgb(253, 126, 20) 100%,
+    rgb(250, 82, 82) 100%
+  );
   animation: var(--timing) linear dance6123 infinite;
   transform: scale(1.1) translateY(-1px);
 }
@@ -424,12 +451,12 @@ nav ul {
   }
 }
 
-.contantus-container{
+.contantus-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.backpiccontact{
-  height: 31rem
+.backpiccontact {
+  height: 31rem;
 }
