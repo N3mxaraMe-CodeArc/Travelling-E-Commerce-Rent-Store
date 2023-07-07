@@ -390,6 +390,9 @@ nav ul {
 }
 
 .form input {
+  color: #00424d;
+  letter-spacing: 0.6px;
+  font-weight: 600;
   outline: 0;
   background: none;
   border: 1px solid rgb(219, 213, 213);
@@ -400,6 +403,9 @@ nav ul {
 }
 
 .form textarea {
+  color: #00424d;
+  letter-spacing: 0.6px;
+  font-weight: 600;
   border-radius: 8px;
   height: 100px;
   width: 90%;
@@ -411,16 +417,30 @@ nav ul {
 }
 
 .form button {
-  align-self: flex-end;
-  padding: 8px;
-  outline: 0;
+  --width: 100px;
+  --timing: 2s;
   border: 0;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: royalblue;
+  width: var(--width);
+  padding-block: 1em;
   color: #fff;
-  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  transition: all 0.2s;
+  align-self: flex-end;
+  border-radius: 8px;
+}
+
+.form button:hover {
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
 }
 
 .contantus-container{
