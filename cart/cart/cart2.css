@@ -14,6 +14,88 @@ body {
     display: flex;
     flex-direction: column;
   }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  hr{
+    height: 0.2rem;
+    border: none;
+    background-color: #000;
+  }
+
+
+/* -----------------------------nav bar-------------------------------- */
+.logo {
+  height: 7rem;
+  cursor: pointer;
+}
+
+.navlinks-group {
+  display: flex;
+  justify-content: end;
+  margin-left: 30rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-top: 2.7rem;
+}
+
+.nav-links {
+  color: white;
+  padding-left: 1rem;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.nav-links:hover,
+nav ul li a:hover {
+  color: aqua;
+  transform: scale(1.09);
+  transition: 0.5s ease;
+  --_p: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  --s: 0.1em;
+  --c: aqua;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+nav ul {
+  list-style: none;
+}
+header .shopping{
+  position: relative;
+  text-align: right;
+}
+header .shopping img{
+  width: 40px;
+  margin-top: 31px;
+}
+header .shopping span{
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  margin-top: 32px;
+  left: 80%;
+  padding: 2px 8px;
+}
+/* -------------------------------------------------------------------- */
+
   .card {
     height: 440px;
     width: 20%;
@@ -27,7 +109,7 @@ body {
       overflow: visible;
       width: 280px;
       height: 230px;
-      margin-left: -4rem;
+      margin-left: -2rem;
       background: transparent;
       transform: rotate(0deg) translateX(20px);
     }
@@ -39,7 +121,7 @@ body {
     > button {
       height: 55px;
       border-radius: 5px;
-      background: #87bfff;
+    background: #00424d;
       color: white;
       font-size: 1.2rem;
       font-weight: bold;
@@ -48,26 +130,32 @@ body {
     }
     > button:hover {
       cursor: pointer;
-      background: #87bfff;
+      background: #698a80;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
     }
   }
   .card:hover {
     cursor: pointer;
-    animation: scaleup 0.4s forwards;
+    animation: scaleup 0.3s forwards;
     > img {
-      animation: rotate 0.2s forwards;
+      animation: rotate 0.3s forwards;
     }
   }
   @keyframes rotate {
     0% {
       transform: rotate(0deg) translateX(20px);
     }
-    50% {
+    25% {
       transform: rotate(20deg) translateX(20px) scale(1.1);
     }
-    100% {
-      transform: rotate(-20deg) translateX(20px);
+    50% {
+      transform: rotate(0deg) translateX(20px);
+    }
+    75%{
+      transform: rotate(-20deg) translateX(20px) scale(1.1);
+    }
+    100%{
+      transform: rotate(0deg) translateX(20px);
     }
   }
   @keyframes scaleup {
@@ -77,8 +165,8 @@ body {
     50% {
       transform: scale(1.05);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2),
-        0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px #87bfff, 0 0 70px #87bfff,
-        0 0 80px #87bfff, 0 0 100px #87bfff, 0 0 150px #87bfff;
+        0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px #04331d, 0 0 70px #02422e,
+        0 0 80px #024029, 0 0 100px #024130, 0 0 150px #014432;
     }
     100% {
       transform: scale(1);
@@ -88,6 +176,7 @@ body {
   height: 3rem;
     font-family: 'IBM Plex Mono';
     font-weight: 700;
+    margin-left: 0.25rem;
     text-transform: uppercase;
     background-color: #202020;
     padding: 0.75rem 1rem;
@@ -108,4 +197,97 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}  
+} 
+
+/*------------------------------------------ card icon windows----------------------- */
+.cards{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #39332F;
+  height: 100vh;
+  transition: 0.5s;
+}
+.cards h1{
+  color: #ffd600;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.cards .checkout{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)  
+}
+.cards .checkout div{
+  background-color: #FFA90C;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+.cards .checkout div:nth-child(2){
+  background-color: #b7b9bc;
+}
+.active .cards{
+  left: calc(100% - 500px);
+}
+.active .container{
+  transform: translateX(-200px);
+}
+.list .item{
+  text-align: center;
+  background-color: rgb(213, 218, 218);
+  padding: 20px;
+  box-shadow: 0 50px #00424d;
+  letter-spacing: 1px;
+}
+.list .item img{
+  width: 90%;
+}
+.list .item .title{
+  font-weight: 600;
+}
+.list .item .price{
+  margin: 10px;
+}
+.list .item button{
+  background-color: #eaecf0;
+  color: #1f1e1e;
+  padding: 10px;
+  width: 100%;
+}
+.listCard li{
+  display: grid;
+  grid-template-columns: 100px repeat(3, 1fr);
+  color: #ffffff;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+.listCard li div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listCard li img{
+  width: 90%;
+}
+.listCard button{
+  width: auto;
+  background-color: #262727;
+  border-radius: 10px;
+}
+.listCard .count{
+  margin: 0 10px;
+}
+
+/* ---------------------------------------------------------------------------------- */
