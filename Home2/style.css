@@ -254,7 +254,7 @@ nav ul {
 }
 .herosection{
   display: flex;
-  /* position: absolute; */
+
 }
 
 .mainlogo{
@@ -298,6 +298,7 @@ nav ul {
   transform: scale(1.04);
   transition: 1s ease;
 }
+
 .tranding-slider-control{
   display: flex;
   cursor: pointer;
