@@ -210,7 +210,7 @@ nav ul {
 .mainlogo {
   width: 35rem;
   height: 25rem;
-  padding-left: 10rem;
+  padding-left: 6rem;
   margin-right: 0;
 }
 
@@ -221,42 +221,23 @@ nav ul {
 
 /* //===================================================================== */
 
-.img-place {
-  height: 14rem;
-  cursor: pointer;
-  position: absolute;
-}
-
-.imgplace {
+.hero-logo{
   display: flex;
 }
 
-.topic-card {
+.img-place{
+  width: 10rem;
+}
+
+.topic-card{
   position: relative;
-  background: none;
-  margin-left: 3.6rem;
-  margin-top: 10rem;
-  color: white;
-  letter-spacing: 3px;
 }
 
-.tranding-slide {
-  padding: 1rem;
-  background: none;
-}
-
-.tranding-slide:hover {
-  transform: scale(1.04);
+.img-place:hover{
+  transform: scale(1.1);
   transition: 1s ease;
 }
 
-.tranding-slider-control {
-  display: flex;
-  cursor: pointer;
-  color: #fcfffc;
-  margin-top: 17rem;
-  margin-left: 15rem;
-}
 
 .discription {
   margin: 4rem;
