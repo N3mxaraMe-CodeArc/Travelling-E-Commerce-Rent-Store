@@ -5,20 +5,26 @@
   margin-top: 0.5rem;
 }
 
-p{
-  font-family: 'Merienda', cursive;
+p {
+  font-family: "Merienda", cursive;
 }
 
 header {
   display: flex;
 }
 
-h1{
-  font-family: 'Kreon', serif;
+h1 {
+  font-family: "Kreon", serif;
+  /* margin-left: 34rem; */
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 6rem;
 }
 
-h3{
-  font-family: 'Grandstander', cursive;
+h3 {
+  font-family: "Grandstander", cursive;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -119,7 +125,6 @@ nav ul {
   }
 }
 
-
 .main-topic {
   display: flex;
   justify-content: flex-start;
@@ -177,63 +182,8 @@ nav ul {
   margin-top: 8rem;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   display: flex;
-}
-
-.card {
-  position: relative;
-  width: 200px;
-  height: 280px;
-  background: url("./img/AdobeStock_311936008_Preview\ 1.png");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-
-.card::before,
-.card::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: rgb(0, 138, 138);
-  transition: all 0.5s;
-}
-
-.card::before {
-  top: 0;
-  right: 0;
-  border-radius: 0 15px 0 100%;
-}
-
-.card::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 100% 0 15px;
-}
-
-.card:hover::before,
-.card:hover:after {
-  width: 100%;
-  height: 100%;
-  transform: scale(1.1);
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-
-.card:hover:after {
-  content: "Click";
 }
 
 .txt-topic {
@@ -245,7 +195,7 @@ nav ul {
   text-transform: uppercase;
 }
 
-.text{
+.text {
   background: none;
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.336);
   margin-top: 10rem;
@@ -253,36 +203,35 @@ nav ul {
   letter-spacing: 4px;
 }
 
-.herosection{
+.herosection {
   display: flex;
 }
 
-.mainlogo{
+.mainlogo {
   width: 35rem;
   height: 25rem;
   padding-left: 10rem;
   margin-right: 0;
 }
 
-.main-topic-blog{
+.main-topic-blog {
   display: flex;
   flex-direction: column;
 }
 
-
 /* //===================================================================== */
 
-.img-place{
+.img-place {
   height: 14rem;
   cursor: pointer;
   position: absolute;
 }
 
-.imgplace{
+.imgplace {
   display: flex;
 }
 
-.topic-card{
+.topic-card {
   position: relative;
   background: none;
   margin-left: 3.6rem;
@@ -291,17 +240,17 @@ nav ul {
   letter-spacing: 3px;
 }
 
-.tranding-slide{
+.tranding-slide {
   padding: 1rem;
   background: none;
 }
 
-.tranding-slide:hover{
+.tranding-slide:hover {
   transform: scale(1.04);
   transition: 1s ease;
 }
 
-.tranding-slider-control{
+.tranding-slider-control {
   display: flex;
   cursor: pointer;
   color: #fcfffc;
@@ -309,7 +258,7 @@ nav ul {
   margin-left: 15rem;
 }
 
-.discription{
+.discription {
   margin: 4rem;
   margin-top: 6rem;
   border: #ffffff solid;
@@ -317,7 +266,7 @@ nav ul {
   padding: 3rem;
 }
 
-.paragraph{
+.paragraph {
   color: white;
   text-transform: uppercase;
   font-size: 15px;
@@ -326,38 +275,31 @@ nav ul {
   text-align: center;
 }
 
-.headingyt{
-  margin-left: 34rem;
-  color: white;
-  font-size: 2.5rem;
-  margin-top: 6rem;
-}
-
-.frame{
+.frame {
   border: white solid;
   padding: 1rem;
   border-radius: 2rem;
   margin: 1.2rem;
 }
 
-.frame:hover{
+.frame:hover {
   transform: scale(1.04);
   transition: 1s ease;
   box-shadow: 0px 4px 0px 0px #ffffff;
 }
 
-.one-row{
+.one-row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.iframe-heading{
+.iframe-heading {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
-.feedbacks{
+.feedbacks {
   color: white;
   text-align: center;
   font-size: 2rem;
