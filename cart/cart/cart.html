@@ -5,32 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Vista</title>
   <link rel="stylesheet" href="cart.css">
-  <link rel="icon" href="./image/logo.png" type="image/png">
+  <link rel="icon" href="./image/logo.png" type="image/png"> 
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="logo-btn">
-        <img src="./image/logo.png" alt="logo-image" class="logo">
-    </div>
-      <h1></h1>
-      <div class="shopping">
-        <img src="./image/shopping.svg" alt="">
-        <span class="quantity">CHECKOUT</span>
-      </div>
-    </header>
-    <div class="list">
-    </div>
-  </div>
-  <div class="card">
-    <h1>Card</h1>
-    <ul class="listCard">      
-    </ul>
-    <div class="checkout">
-      <div class="total">0</div>
-      <div class="closeShopping">Close</div>
-    </div>
-  </div>
-  <script src="cart.js"></script> 
+  <header>
+    <img src="./image/logo.png" class="logo"/>
+        <nav class="navlinks">
+          <ul class="navlinks-group">
+            <li class="nav-links"><a href="#">home</a></li>
+            <li class="nav-links"><a href="#">shop</a></li>
+            <li class="nav-links"><a href="#">thumbnail</a></li>
+            <li class="nav-links"><a href="#">sitemap</a></li>
+            <li class="nav-links"><a href="#">aboutus</a></li>
+            <li class="nav-links"><img class="shopping" src="./image/shopping.svg" alt=""></li>
+          </ul>
+        </nav>
+      </header>    
+<hr>
+<table width="100%">
+  <thead>
+    <tr>
+      <td>Remove</td>
+      <td>Image</td>
+      <td>Product</td>
+      <td>Price</td>
+      <td>Quantity</td>
+      <td>Subtotal</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#">o</a></td>
+      <td><img src="./image/1.png" alt=""></td>
+      <td>70L-Professional-Mountaineering-Bag</td>
+      <td>LKR.4500</td>
+      <td><input type="number" value="1"></td>
+      <td>LKR.4500</td>
+    </tr>
+  </tbody>
+</table>
+
 </body>
 </html>

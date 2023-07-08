@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Vista</title>
-    <link rel="stylesheet" href="cart2.css">
+    <link rel="stylesheet" href="shop.css">
     <link rel="icon" href="./image/logo.png" type="image/png">    
 </head>
 <body>
@@ -27,6 +27,7 @@
 <hr>  
 <div class="container">
     <div class="first-row">
+
         <div class="card" id="cart-item">
             <h4>70L-Professional-Mountaineering-Bag</h4>
             <img src="./image/1.png" alt="">
@@ -34,18 +35,19 @@
             <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
                 <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
-              </label>
+            </label>
         </div>
+
         <div class="card">
-           <h4>Professional-Waterproof-Mens-Bag</h4>
-           
-           <img src="./image/2.png" alt="">
-           <span class="price">LKR.5800</span>
-           <button class="cart">ADD TO CART</button>
-           <label class="quantity">
+          <h4>Professional-Waterproof-Mens-Bag</h4>           
+          <img src="./image/2.png" alt="">
+          <span class="price">LKR.5800</span>
+          <button class="cart">ADD TO CART</button>
+          <label class="quantity">
             <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
           </label>
         </div>
+
         <div class="card">
            <h4>Outdoor-Mountaineering-Travel-Bag</h4>
            <img src="./image/3.png" alt="">
@@ -145,14 +147,17 @@
         </div>
     </div>
 </div>
-<div class="cart-card">
-    <h1>Your Cart</h1>
-    <ul class="listCard"></ul>
-    <div class="checkout">
-        <div class="total">Checkout</div>
-        <div class="closeShopping">Close</div>
-        </div>
-    </div>        
-<script src="cart2.js"></script>   
+
+<div class="cart-card" id="itemContent">
+  <!-- <h1>Your Cart</h1> -->
+  <ul class="listCard"></ul>
+  <div class="checkout">
+    <div class="total">Checkout</div>
+    <div class="closeShopping">Close</div>
+  </div>
+</div> 
+    
+    
+<script src="shop.js"></script>   
 </body>
 </html>
