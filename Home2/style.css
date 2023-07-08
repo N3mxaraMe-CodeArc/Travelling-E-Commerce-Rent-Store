@@ -78,12 +78,12 @@ nav ul {
   list-style: none;
 }
 
-button {
+.navlinks button {
   font-size: 0.6rem;
   height: 3rem;
   width: 6.5rem;
-  margin-left: 2rem;
-  padding-bottom: 0.5rem;
+  margin-left: 3rem;
+  padding-bottom: 0.6rem;
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
@@ -99,7 +99,7 @@ button {
   margin-top: 0;
  }
  
- button:after {
+.navlinks button:after {
   content: " ";
   width: 0%;
   height: 100%;
@@ -109,13 +109,13 @@ button {
   right: 0;
  }
  
- button:hover::after {
+.navlinks button:hover::after {
   right: auto;
   left: 0;
   width: 100%;
  }
  
- button span {
+.navlinks button span {
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -128,7 +128,7 @@ button {
   transition: all 0.3s ease-in-out;
  }
  
- button:hover span {
+.navlinks button:hover span {
   font-weight: 700;
   color: #183153;
   animation: scaleUp 0.3s ease-in-out;
