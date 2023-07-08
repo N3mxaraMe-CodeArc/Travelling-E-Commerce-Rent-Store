@@ -39,6 +39,12 @@
   /* padding-right: 5rem; */
 }
 
+.items-t-footer:hover{
+   color: #3898ec;
+   transition: 0.5s ease;
+   transform: scale(1.04);
+}
+
 .input-group {
   display: flex;
   align-items: center;
@@ -96,4 +102,11 @@
 .social-media-icon:hover{
    transform: scale(1.15);
    transition: 1s ease;
+}
+
+.product-text{
+   color: rgb(156, 152, 152);
+   font-family: 'Open Sans', sans-serif;
+   font-size: 15px;
+   padding-bottom: 15px;
 }
