@@ -39,7 +39,7 @@ h3 {
 .navlinks-group {
   display: flex;
   justify-content: end;
-  margin-left: 30rem;
+  margin-left: 20rem;
   cursor: pointer;
   text-transform: uppercase;
   margin-top: 1rem;
@@ -77,6 +77,76 @@ nav ul li a {
 nav ul {
   list-style: none;
 }
+
+.navlinks button {
+  font-size: 0.6rem;
+  height: 3rem;
+  width: 6.5rem;
+  margin-left: 3rem;
+  padding-bottom: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #094ca8;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  margin-top: 0;
+ }
+ 
+.navlinks button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #f0cf2c;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+ }
+ 
+.navlinks button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+ }
+ 
+.navlinks button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+.navlinks button:hover span {
+  font-weight: 700;
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+ }
+ 
+ @keyframes scaleUp {
+  0% {
+   transform: scale(1);
+  }
+ 
+  50% {
+   transform: scale(0.95);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
 
 .loader {
   width: 60px;
@@ -289,8 +359,9 @@ nav ul {
 }
 
 .iframe-heading {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  line-height: 1.8rem;
 }
 
 .feedbacks {
