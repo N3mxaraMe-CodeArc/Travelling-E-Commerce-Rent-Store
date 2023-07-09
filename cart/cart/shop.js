@@ -14,22 +14,35 @@ closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
 
+var numb = 0;
+
 function addtocart(){
+    var count = document.getElementById("quant");
+    count.innerHTML = numb;
+
     var item = document.createElement('div');
     item.classList.add("cart-add");    
     var cartItem = document.getElementById("cart-item");
-    var proName = cartItem.children[0].innerHTML;  
+    var proName = cartItem.children[0].innerText;  
     var image = document.createElement('img'); 
-    image.src = proImg; 
-    var proImg = cartItem.children[1].src;
-    var proPrz = cartItem.children[2].innerHTML;
+    var proLink = cartItem.children[1].src;
+    image.src = proLink; 
+    var proPrz = cartItem.children[2].innerText;
+    var quanti = document.getElementById("5_quantity").value;
+    // var numOfItems = 
+    var Remove = document.createElement('span');
+    Remove.innerHTML='<i class = "fa fa-trash"></i>';
+    Remove.onclick = Remove.classList.add("deleteRow");
 
     item.append(image);
     item.append(proName);
     item.append(proPrz);
+    item.append(quanti);
 
     document.getElementById("itemContent").append(item);
-
+    numb++;
     console.log(document.getElementById("itemContent"));
-0
+
+    var count = document.getElementById("quant");
+    count.innerHTML = numb;
 }

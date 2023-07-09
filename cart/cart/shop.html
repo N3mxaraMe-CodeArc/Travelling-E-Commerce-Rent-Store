@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Vista</title>
     <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./image/logo.png" type="image/png">    
 </head>
 <body>
@@ -12,8 +13,8 @@
     <img src="./image/logo.png" class="logo"/>
         <nav class="navlinks">
           <ul class="navlinks-group">
-            <li class="nav-links"><a href="#">home</a></li>
-            <li class="nav-links"><a href="#">shop</a></li>
+            <li class="nav-links"><a href="">home</a></li>
+            <li class="nav-links"><a href="shop.html">shop</a></li>
             <li class="nav-links"><a href="#">thumbnail</a></li>
             <li class="nav-links"><a href="#">sitemap</a></li>
             <li class="nav-links"><a href="#">aboutus</a></li>
@@ -21,7 +22,7 @@
         </nav>
         <div class="shopping">
             <img src="./image/shopping.svg" alt="">
-            <span class="quantity-number">0</span>
+            <span class="quantity-number" id="quant">0</span>
           </div>
       </header>    
 <hr>  
@@ -34,115 +35,115 @@
             <span class="price">LKR.4500</span>
             <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
             </label>
         </div>
 
-        <div class="card">
+        <div class="card" id="cart-item">
           <h4>Professional-Waterproof-Mens-Bag</h4>           
           <img src="./image/2.png" alt="">
           <span class="price">LKR.5800</span>
-          <button class="cart">ADD TO CART</button>
+          <button onclick="addtocart()" class="cart">ADD TO CART</button>
           <label class="quantity">
-            <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+            <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
           </label>
         </div>
 
-        <div class="card">
+        <div class="card" id="cart-item">
            <h4>Outdoor-Mountaineering-Travel-Bag</h4>
            <img src="./image/3.png" alt="">
            <span class="price">LKR.6000</span>
-           <button class="cart">ADD TO CART</button>
+           <button onclick="addtocart()" class="cart">ADD TO CART</button>
            <label class="quantity">
-            <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+            <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
           </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>Military-Backpacks-1000D</h4>
             <img src="./image/4.png" alt="">
             <span class="price">LKR.8000</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
     </div>
 
-    <div class="first-row">
-        <div class="card">
+    <div class="first-row" >
+        <div class="card" id="cart-item">
             <h4>Hewolf-Outdoor-Camping-Tent</h4>
             <img src="./image/5.png" alt="">
             <span class="price">LKR.12000</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>Naturehike-Ultralight-Tent</h4>
             <img src="./image/6.png" alt="">
             <span class="price">LKR.9000</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input  class="size"id="5_quantity" type="number" min="1" max="10" value="1">
+                <input  class="size"id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>CAMEL-Waterproof-Hiking-Shoes</h4>
             <img src="./image/7.png" alt="">
             <span class="price">LKR.4000</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>Hiking-Shoes-Non-slip-Wear</h4>
             <img src="./image/8.png" alt="">
             <span class="price">LKR.3800</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
     </div>
 
 
     <div class="first-row">
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>GoPro-Hero-10</h4>
             <img src="./image/9.png" alt="">
             <span class="price">LKR.80000</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>X-TIGER-1200mAh-7-LED-Flashlight</h4>
             <img src="./image/10.png" alt="">
             <span class="price">LKR.2500</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>Outdoor-Telescope-100x22r</h4>
             <img src="./image/11.png" alt="">
             <span class="price">LKR.7500</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
-        <div class="card">
+        <div class="card" id="cart-item">
             <h4>Backpack-Style-Multi-Foldable-Stool</h4>
             <img src="./image/12.png" alt="">
             <span class="price">LKR.3500</span>
-            <button class="cart">ADD TO CART</button>
+            <button onclick="addtocart()" class="cart">ADD TO CART</button>
             <label class="quantity">
-                <input class="size" id="5_quantity" type="number" min="1" max="10" value="1">
+                <input class="size" id="5_quantity" type="number" min="1" max="10" placeholder="1">
               </label>
         </div>
     </div>
@@ -152,11 +153,10 @@
   <!-- <h1>Your Cart</h1> -->
   <ul class="listCard"></ul>
   <div class="checkout">
-    <div class="total">Checkout</div>
+    <div class="total"><a href="checkout.html">Checkout</a></div>
     <div class="closeShopping">Close</div>
   </div>
 </div> 
-    
     
 <script src="shop.js"></script>   
 </body>
