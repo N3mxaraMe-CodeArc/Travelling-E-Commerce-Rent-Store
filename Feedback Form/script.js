@@ -6,9 +6,9 @@ function changeImage(starIndex) {
 
       if (i < starIndex) {
          starElement.src = "../Images/form/star_rate.png";
-         document.getElementById("rateus").innerHTML="Thanks For your Rating...!";
-      }else {
+         document.getElementById("rateus").innerHTML = "Thanks For your Rating...!";
+      } else {
          starElement.src = "../Images/form/star.png";
       }
    }
-} 
+}

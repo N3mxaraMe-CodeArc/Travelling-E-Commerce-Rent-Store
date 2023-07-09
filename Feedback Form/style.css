@@ -4,6 +4,7 @@
 
 .container {
   display: flex;
+  /* position: relative; */
 }
 .mainimage {
   z-index: 000;
@@ -15,7 +16,8 @@
   object-fit: cover;
 }
 
-.subcontainer {
+.subcontainer { 
+  position: absolute;
   justify-content: center;
   width: 95%;
   height: 95%;
@@ -69,7 +71,7 @@
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-weight: 700;
 }
-.checkbox{
+.checkbox {
   cursor: pointer;
 }
 
@@ -117,7 +119,6 @@
   transition: background-image 0.3s;
   transform: scale(1.03);
 }
-
 
 .star:hover {
   cursor: pointer;
@@ -193,10 +194,9 @@
   background: #20152d;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.67);
   border: none;
-  
 }
 
-.btn-nxt:hover{
+.btn-nxt:hover {
   background-color: #032585;
   cursor: pointer;
   box-shadow: 0px 2px 2px 0px #032585;
@@ -205,17 +205,17 @@
   border: none;
 }
 
-.next{
+.next {
   font-size: 13px;
   text-transform: uppercase;
   margin-right: 1rem;
 }
 
-.btnlink{
+.btnlink {
   text-decoration: none;
 }
 
-.btn{
+.btn {
   justify-content: end;
   align-items: end;
   display: flex;
@@ -223,7 +223,7 @@
   margin-right: 1rem;
 }
 
-.arrow{
+.arrow {
   width: 1.5rem;
   padding-top: 1rem;
   text-align: center;
