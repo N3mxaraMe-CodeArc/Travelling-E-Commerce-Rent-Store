@@ -4,165 +4,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Karla:wght@500&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Home2/style.css" />
+    <link rel="stylesheet" href="../external.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>FEEDBACK FORM</title>
+    <title>FEED BACK</title>
   </head>
   <body>
+    <header>
+      <img
+        src="../Home2/img/Black And White Rakia Design Studio Logo 1.png"
+        alt=""
+        class="logo"
+      />
+      <nav class="navlinks">
+        <ul class="navlinks-group">
+          <li class="nav-links"><a href="#">home</a></li>
+          <li class="nav-links"><a href="#">shop</a></li>
+          <li class="nav-links"><a href="#">thumbnail</a></li>
+          <li class="nav-links"><a href="#">sitemap</a></li>
+          <li class="nav-links"><a href="#">quiz</a></li>
+          <li class="nav-links"><a href="#">aboutus</a></li>
+          <button>
+            <span style="background: none">support</span>
+          </button>
+        </ul>
+      </nav>
+    </header>
     <div class="container">
-      <video
-        class="mainimage active"
-        src="hiking videos/Sri Lanka - Heart of the Indian Ocean_Full-HD.mp4"
-        autoplay
-        muted
-        loop
-      ></video>
-      <div class="subcontainer">
-        <div class="header">
-          <img src="../home/logo.png" alt="" class="logo" />
-          <div class="topic">
-            <h2 class="maintopic">Website Feedback form</h2>
-            <p class="subtopic">Code Arcade team</p>
-          </div>
-          <img src="../Images/form/reviews.png" alt="" class="logoimg" />
+      <section class="heroSection">
+        <h1>
+          <span style="letter-spacing: 10px; color: aqua">Support</span
+          ><br />Use the below Form to Feedback Us
+        </h1>
+      </section>
+      <section class="form">
+        <form action="submit" method="post"></form>
+        <div class="name">
+          <h5>First Name</h5>
+          <input style="margin-right: 5rem;" type="text" >
+          <h5 style="margin-left: 2rem;">Last Name</h5>
+          <input  type="text" >
         </div>
-        <div class="textfeilds">
-          <div class="name">
-            <label for="name" class="title">Name :</label>
-            <input
-              type="text"
-              placeholder="Enter your Name"
-              class="nametextfield"
-              required
-            />
-          </div>
-          <div class="email :">
-            <label for="email" class="title">Email :</label>
-            <input
-              type="email"
-              class="nametextfield"
-              placeholder="Enter your Email"
-              id="email"
-              name="email"
-              required
-            />
+        <div class="contact">
+          <h5 style="margin-left: 3rem;">Contact</h5>
+          <input style="margin-right: 1.5rem;" type="number" required="true" placeholder="+94 ** *** ****" >
+          <h5 style="margin-left: 8rem;">Email</h5>
+          <input  type="email" required="true" placeholder="codearcade@ca20.lk" >
+        </div>
+        <div class="rating">
+          <div class="rating">
+            <input type="radio" id="star5" name="rate" value="5">
+            <label for="star5" title="text"></label>
+            <input type="radio" id="star4" name="rate" value="4">
+            <label for="star4" title="text"></label>
+            <input checked="" type="radio" id="star3" name="rate" value="3">
+            <label for="star3" title="text"></label>
+            <input type="radio" id="star2" name="rate" value="2">
+            <label for="star2" title="text"></label>
+            <input type="radio" id="star1" name="rate" value="1">
+            <label for="star1" title="text"></label>
           </div>
         </div>
-        <hr />
-        <div class="starrating">
-          <h3 class="ratetopic">Rate Us</h3>
-          <div class="stars">
-            <img
-              onclick="changeImage(1)"
-              src="../Images/form/star.png"
-              alt=""
-              class="star"
-              id="star1"
-            />
-            <img
-              onclick="changeImage(2)"
-              src="../Images/form/star.png"
-              alt=""
-              class="star"
-              id="star2"
-            />
-            <img
-              onclick="changeImage(3)"
-              src="../Images/form/star.png"
-              alt=""
-              class="star"
-              id="star3"
-            />
-            <img
-              onclick="changeImage(4)"
-              src="../Images/form/star.png"
-              alt=""
-              class="star"
-              id="star4"
-            />
-            <img
-              onclick="changeImage(5)"
-              src="../Images/form/star.png"
-              alt=""
-              class="star"
-              id="star5"
-            />
-          </div>
-          <div class="thanks">
-            <p class="thanks" id="rateus">Click to Rate.!</p>
-          </div>
-          <div class="rateform">
-            <p class="topic">Why are you rating us :</p>
-            <textarea
-              name="text"
-              id="textrate"
-              class="textrate"
-              cols="30"
-              rows="3"
-            ></textarea>
-          </div>
-        </div>
-        <hr />
-        <div class="feedback">
-          <div class="option1">
-            <p class="que1">Are you new to this website.?</p>
-            <div class="ele-op">
-              <div class="ckeckbox">
-                <input type="checkbox" class="checkbox" name="no" />
-                <label for="Yes">Yes</label>
-              </div>
-              <div class="topiccheck">
-                <input type="checkbox" class="checkbox" name="no" />
-                <label for="No">No</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="option2">
-            <p class="que1">Are you new to this website.?</p>
-            <div class="ele-op">
-              <div class="ckeckbox">
-                <input type="checkbox" class="checkbox" name="no" />
-                <label for="Yes">Yes</label>
-              </div>
-
-              <div class="topiccheck">
-                <input type="checkbox" class="checkbox" name="no" />
-                <label for="No">No</label>
-              </div>
-            </div>
-          </div>
-          <div class="option3">
-            <p class="que1">Are you new to this website.?</p>
-            <div class="ele-op">
-              <div class="ckeckbox">
-                <input type="checkbox" class="checkbox" name="yes" />
-                <label for="Yes">Yes</label>
-              </div>
-
-              <div class="topiccheck">
-                <input type="checkbox" class="checkbox" name="no" />
-                <label for="No">No</label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="btn">
-          <a class="btnlink" href="#">
-            <button class="btn-nxt" id="btn-nxt">
-              <p class="next">Next</p>
-              <img
-                class="arrow"
-                src="../Images/form/arrow_forward.png"
-                alt=""
-              />
-            </button>
-          </a>
-        </div>
-      </div>
+        <button type="submit">Submit</button>
+      </section>
+      
     </div>
-    <script src="script.js"></script>
   </body>
 </html>
