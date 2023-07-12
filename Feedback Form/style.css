@@ -75,5 +75,57 @@ h5{
 }
 
 .rating{
+  background: none;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.rating h5{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.rating label{
+  background: none;
+  display: flex;
+  margin-top: 6rem;
+  color: seagreen;
+  font-size: 1rem;
+}
+
+
+.radiobtns{
+  cursor: pointer;
+  display: flex;
+  background: none;
+}
+
+.ratingdis{
+  background: none;
+  justify-content: flex-start;
+  margin-left: 5rem;
+}
+
+.ratingdis textarea {
+  padding: 1rem;
+  margin: 0;
+  margin-top: 0;
+}
+
+.ratingdis label{
+  margin-bottom: 1rem;
+}
+
+.radiobtns{
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.radiobtns label{
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
 }
