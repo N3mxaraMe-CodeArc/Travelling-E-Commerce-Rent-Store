@@ -97,6 +97,7 @@ nav ul {
   overflow: hidden;
   border: none;
   margin-top: 0;
+  cursor: pointer;
  }
  
 .navlinks button:after {
