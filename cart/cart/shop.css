@@ -23,8 +23,6 @@ body {
     border: none;
     background-color: #000;
   }
-
-
 /* -----------------------------nav bar-------------------------------- */
 .logo {
   height: 7rem;
@@ -133,11 +131,12 @@ header .shopping span{
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
     }
   }
+
   .card:hover {
     cursor: pointer;
     animation: scaleup 0.1s forwards;
     > img {
-      animation: rotate 0.3s forwards;
+      animation: rotate 0.7s forwards;
     }
   }
   .price{
@@ -208,10 +207,10 @@ header .shopping span{
 .size{
   width: 4rem;
   height: 2.8rem;
-  background-color: #348d6e;
+  /* background-color: #348d6e; */
   margin-top: -0.5rem;
   border-radius: 8px;
-  color: white;
+  color: rgb(0, 0, 0);
   box-shadow: #121212;
   font-size: 22px;
   font-weight: 500;
@@ -235,7 +234,9 @@ header .shopping span{
   background-color: #342c27;
   height: 100vh;
   transition: 0.5s;
+  padding-right: 20px;
 }
+
 .cart-card h1{
   color: #ffd600;
   font-weight: 100;
@@ -245,6 +246,7 @@ header .shopping span{
   display: flex;
   align-items: center;
 }
+
 .cart-card .checkout{
   position: absolute;
   bottom: 0;
@@ -252,6 +254,7 @@ header .shopping span{
   display: grid;
   grid-template-columns: repeat(2, 1fr)  
 }
+
 .cart-card .checkout div{
   background-color: #FFA90C;
   width: 100%;
@@ -262,10 +265,28 @@ header .shopping span{
   font-weight: bold;
   cursor: pointer;
 }
+
 .cart-card .checkout div:nth-child(2){
   background-color: #b7b9bc;
 }
+
 .active .cart-card{
-  left: calc(100% - 500px);
+  left: calc(100% - 520px);
 }
+
 /* ---------------------------------------------------------------------------------- */
+
+.cart-add{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: brown;
+  color: white;
+  margin: 10px 25px;
+
+}
+
+.deleteRow{
+  display: none;
+}

@@ -1,0 +1,114 @@
+.frist-row-footer {
+    background-color: #072428;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3rem;
+    height: 15rem;
+    margin-top: 5rem;
+    margin-right: 1rem;
+    margin-left: 1.2rem;
+  }
+  
+  .f-logo-footer {
+    background: none;
+    padding: 1rem;
+    width: rem;
+  }
+  .s-topl-footer {
+    background: none;
+  }
+  
+  .footer-t-items {
+    display: flex;
+  }
+  
+  .items-t-footer {
+    background: none;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    line-height: 25px;
+  }
+  .items-ex-footer {
+    background: none;
+  }
+  
+  .t-email-footer {
+    background: none;
+    /* padding-right: 5rem; */
+  }
+  
+  .items-t-footer:hover{
+     color: #3898ec;
+     transition: 0.5s ease;
+     transform: scale(1.04);
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-email {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #5e4dcd;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #040275;
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
+  
+  .input:focus,
+  .input:focus-visible {
+    border-color: #3898ec;
+    outline: none;
+  }
+  
+  .imgpayment{
+     cursor: pointer;
+  }
+  
+  .followus{
+     background: none;
+     margin-right: 3rem;
+  }
+  
+  .social-media-icon{
+     background: none;
+     height: 2.5rem;
+  }
+  
+  .social-media-icon:hover{
+     transform: scale(1.15);
+     transition: 1s ease;
+  }
+  
+  .product-text{
+     color: rgb(156, 152, 152);
+     font-family: 'Open Sans', sans-serif;
+     font-size: 15px;
+     padding-bottom: 15px;
+     text-align: center;
+  }
