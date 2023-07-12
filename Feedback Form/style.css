@@ -122,10 +122,12 @@ h5{
 .radiobtns{
   width: 40rem;
   margin: 0 auto;
+  margin-top: 1.5rem;
+  cursor: pointer;
 }
 
 .radiobtns label{
   position: relative;
-  margin-right: 0;
-  margin-left: 0;
+  left: -2.2rem;
+  top: -1.5rem;
 }
