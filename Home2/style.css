@@ -108,6 +108,7 @@ nav ul {
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;
+  margin-top: 0.5rem;
  }
  
 .navlinks button:hover::after {
