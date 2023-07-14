@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Vista</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="icon" href="./image/logo.png" type="image/png">  
+</head>
+<body>
+    <header>
+        <img src="./image/logo.png" class="logo"/>
+    </header>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Billing Address</h3>
+
+                <div class="inputBox">
+                    <span>Full Name :</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="inputBox">
+                    <span>Address :</span>
+                    <input type="text" placeholder="Enter your address">
+                </div>
+                <div class="inputBox">
+                    <span>City :</span>
+                    <input type="text" placeholder="Your city">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>State :</span>
+                        <input type="text" placeholder="Sri Lanka">
+                    </div>
+                    <div class="inputBox">
+                        <span>Zip Code :</span>
+                        <input type="text" placeholder="70000" required>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Payment</h3>
+
+                <div class="inputBox">
+                    <span>Cards accepted :</span>
+                    <img src="./image/card_img.png" alt="">
+                </div>
+                
+
+                <div class="inputBox">
+                    <span>Name on card :</span>
+                    <input type="text" placeholder="mr.dinujaya">
+                </div>
+                
+                <div class="inputBox">
+                    <span>Credit card number :</span>
+                    <input type="number" placeholder="123-456-789" required>
+                </div>
+                <div class="inputBox">
+                    <span>Expire month:</span>
+                    <input type="text" placeholder="january">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Expire year :</span>
+                        <input type="number" placeholder="2030">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV Number :</span>
+                        <input type="text" placeholder="123">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="end">
+            <input type="submit" value="clear changes" class="clear-btn">
+            <input type="submit" value="Proceed to checkout" class="submit-btn">
+        </div>
+        
+
+    </form>
+    
+</div>    
+</body>
+</html>
