@@ -134,7 +134,7 @@ h5 {
 }
 
 form .button-submit-feedback {
-  width: 10rem;
+  width: 7rem;
   height: 3rem;
   /* display: flex; */
   
@@ -144,4 +144,26 @@ form .button-submit-feedback {
   display: grid;
   justify-content: end;
   margin-right: 5rem;
+}
+
+.submitbtn-feedback .button-submit-feedback{
+  background: none;
+  /* border: 1px solid seagreen; */
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  background-color: #094ca8;
+  color: white;
+  /* background-image: linear-gradient(315deg, aqua 0%, #00ffff 74%); */
+}
+
+.submitbtn-feedback .button-submit-feedback:hover{
+  background-color: #006aff;
+  transform: scale(1.04);
+  transition: 0.5s ease-in;
+  /* border-radius: 20px; */
+  /* box-shadow: 0 4px 4px 2px #006aff; */
+  border: none;
 }
