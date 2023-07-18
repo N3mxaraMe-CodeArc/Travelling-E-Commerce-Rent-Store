@@ -22,20 +22,19 @@ h3 {
   justify-content: flex-start;
 }
 
-h5{
+h5 {
   color: rgb(61, 61, 61);
   font-size: 1rem;
   /* letter-spacing: 1px; */
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
   background: none;
   font-weight: 500;
 }
 
-.form{
+.form {
   background-color: rgb(255, 255, 255) !important;
-  
   z-index: 999;
   padding: 1rem;
   width: 96%;
@@ -45,36 +44,35 @@ h5{
   margin-top: 8rem;
 }
 
-.name,.contact{
+.name,
+.contact {
   background: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.contact{
+.contact {
   margin-right: 1.5rem;
 }
 
 .contact input,
-.name input{
+.name input {
   color: rgb(100, 100, 100);
   font-weight: 400;
   letter-spacing: 1px;
   display: flex;
   width: 20rem;
   height: 2rem;
-
 }
 
 .contact h5,
-.name h5{
-  
+.name h5 {
   margin-top: 1.5rem;
   padding-right: 1rem;
 }
 
-.rating{
+.rating {
   background: none;
   display: flex;
   flex-direction: column;
@@ -82,13 +80,13 @@ h5{
   margin-top: 3rem;
 }
 
-.rating h5{
+.rating h5 {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.rating label{
+.rating label {
   background: none;
   display: flex;
   margin-top: 6rem;
@@ -96,36 +94,54 @@ h5{
   font-size: 1rem;
 }
 
-
-.radiobtns{
+.radiobtns {
   cursor: pointer;
   display: flex;
   background: none;
 }
 
-.ratingdis{
+.ratingdis {
   background: none;
   justify-content: flex-start;
   margin-left: 5rem;
 }
 
 .ratingdis textarea {
-  padding: 1rem;
+  /* padding: 0; */
   margin: 0;
   margin-top: 0;
 }
 
-.ratingdis label{
+.ratingdis label {
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
-.radiobtns{
+.radiobtns {
   width: 40rem;
   margin: 0 auto;
+  margin-top: 1.5rem;
+  cursor: pointer;
 }
 
-.radiobtns label{
+.radiobtns label {
+  /* display: flex; */
   position: relative;
-  margin-right: 0;
-  margin-left: 0;
+  /* position: absolute; */
+  left: -2.2rem;
+  top: -1.5rem;
+  /* margin-top: 0; */
+}
+
+form .button-submit-feedback {
+  width: 10rem;
+  height: 3rem;
+  /* display: flex; */
+  
+}
+
+.submitbtn-feedback{
+  display: grid;
+  justify-content: end;
+  margin-right: 5rem;
 }
