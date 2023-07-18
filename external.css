@@ -1,3 +1,40 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin-left: 0.5rem;
+  /* background-color: #00424d; */
+  margin-top: 0.5rem;
+}
+
+p {
+  font-family: "Merienda", cursive;
+}
+
+header {
+  display: flex;
+}
+
+h1 {
+  font-family: "Kreon", serif;
+  /* margin-left: 34rem; */
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 6rem;
+}
+
+h3 {
+  font-family: "Grandstander", cursive;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.logo {
+  height: 7rem;
+  cursor: pointer;
+}
 .navlinks-group {
   display: flex;
   justify-content: end;
@@ -23,6 +60,7 @@ nav ul li a:hover,
   --_p: 100%;
 }
 
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -39,6 +77,9 @@ nav ul li a {
 
 nav ul {
   list-style: none;
+}
+.active{
+  color: aqua;
 }
 
 
