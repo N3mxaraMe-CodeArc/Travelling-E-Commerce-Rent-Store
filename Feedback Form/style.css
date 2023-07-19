@@ -169,7 +169,7 @@ form .button-submit-feedback {
   border: none;
 }
 
-.select-items{
+.select-items {
   margin-top: 5rem;
 }
 
@@ -185,7 +185,7 @@ select#select option {
   border-radius: 15px;
 }
 
-.problemdis{
+.problemdis {
   margin: 0 auto;
   margin-top: 5rem;
   background: none;
@@ -194,13 +194,115 @@ select#select option {
   flex-direction: column;
 }
 
-.problemdis label:hover{
-color: #094ca8;
+.problemdis label:hover {
+  color: #094ca8;
 }
 
-.problemdis textarea{
+.problemdis textarea {
   margin-top: 2rem;
-  width : 60rem;
+  width: 60rem;
   border-radius: 20px;
   padding-top: 20px;
+}
+
+.support-table {
+  display: flex;
+  background: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.support-table h3 {
+  background: none;
+  color: #000;
+  letter-spacing: 3px;
+}
+.support-table table {
+  margin-top: 2rem;
+  width: 50rem;
+  height: 25rem;
+  /* border: 1px solid #000; */
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.support-table table td,
+.support-table table th,
+.support-table table tr {
+  width: 20px;
+  height: 1px;
+  background: white;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.check-container input {
+  background: none;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check-container {
+  background: none;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background-color: #bdbdbd;
+  transition: all 0.3s;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.check-container input:checked ~ .checkmark {
+  background-color: #47da99;
+  animation: pop 0.5s;
+  animation-direction: alternate;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

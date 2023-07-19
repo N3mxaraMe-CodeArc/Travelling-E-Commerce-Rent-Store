@@ -211,6 +211,9 @@
               class="select-obj"
               id="select"
             >
+              <option value="" disabled selected>
+                -- Select your Country --
+              </option>
               <option class="options" value="Sri Lanka">Sri Lanka</option>
               <option class="options" value="Australia">Australia</option>
               <option class="options" value="India">India</option>
@@ -225,22 +228,150 @@
               name="Answer"
               class="select-obj"
               id="select"
+              required="true"
             >
+              <option value="" disabled selected>--Select Your Idea ---</option>
               <option class="options" value="Yes">Yes</option>
               <option class="options" value="No">No</option>
               <option class="options" value="Havent">Havent Idea</option>
             </select>
           </div>
+
           <div class="problemdis">
-            <label style="background: none;" for="Quection">Can I know What is Your Quetion..?</label>
-          <textarea
-            name="textarea"
-            id="textarea"
-            rows="10"
-            cols="50"
-            required="true"
-          ></textarea>
+            <label style="background: none" for="Quection"
+              >Can I know what your question is..?</label
+            >
+            <textarea
+              name="textarea"
+              id="textarea"
+              rows="10"
+              cols="50"
+              required="true"
+            ></textarea>
           </div>
+          <br />
+          <hr />
+          <div style="background: none" class="support-table">
+            <h3>Support Us</h3>
+            <table style="background: none">
+              <tr>
+                <th></th>
+                <th>Week</th>
+                <th>Good</th>
+                <th>Very Good</th>
+                <th>Attractive</th>
+              </tr>
+              <tr>
+                <th>Content</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option1" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option1" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option1"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option1"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>Blog Post</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option2" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option2" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option2"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option2"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>Detail</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option3" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option3" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option3"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option3"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>Rent Shop</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option4" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option4" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option4"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option4"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
           <div style="background: none" class="submitbtn-feedback">
             <input
               onclick="openPopup()"
@@ -248,11 +379,12 @@
               class="button-submit-feedback"
               value="Submit"
             />
-            
           </div>
         </form>
       </section>
     </div>
+    <!-- need to create a form -->
+
     <script src="./script.js"></script>
   </body>
 </html>
