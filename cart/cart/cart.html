@@ -9,51 +9,46 @@
   <link rel="icon" href="./image/logo.png" type="image/png"> 
 </head>
 <body>
-  <header>
+<header>
     <img src="./image/logo.png" class="logo"/>
-        <nav class="navlinks">
-          <ul class="navlinks-group">
-            <li class="nav-links"><a href="#">home</a></li>
-            <li class="nav-links"><a href="#">shop</a></li>
+    <nav class="navlinks">
+        <ul class="navlinks-group">
+            <li class="nav-links"><a href="">home</a></li>
+            <li class="nav-links"><a href="shop.html">shop</a></li>
             <li class="nav-links"><a href="#">thumbnail</a></li>
             <li class="nav-links"><a href="#">sitemap</a></li>
             <li class="nav-links"><a href="#">aboutus</a></li>
-            <li class="nav-links"><img class="shopping" src="./image/shopping.svg" alt=""></li>
-          </ul>
-        </nav>
-      </header>    
+        </ul>
+    </nav>
+</header>    
 <hr>
-<table width="100%">
+<table width="100%" border="3px" solid>
   <thead>
     <tr class="table-row">
-      <td>Remove</td>
-      <td>&nbsp;&nbsp;&nbsp;&nbsp;Image</td>
-      <td>Product</td>
-      <td>Price</td>
-      <td>Quantity</td>
-      <td>Subtotal</td>
+      <th>Remove</th>
+      <th>&nbsp;Image</th>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Subtotal</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td><img src="./image/remove.png" alt="remove-png" class="remove-icon"></td>
-      <td><img class="checkout-img" src="./image/1.png" alt=""></td>
-      <td>70L-Professional-Mountaineering-Bag</td>
-      <td>LKR.4500</td>
-      <td><input type="number" min="1" max="10" placeholder="1"></td>
-      <td>LKR.4500</td>
-    </tr>
   </tbody>
+  <tfoot>
+    <tr class="total-row">
+      <th colspan="5">Total</th>
+      <td id="total-subtotal"></td>
+    </tr>
+  </tfoot>
 </table>
 
-  <footer>
+<div id="empty-cart-message" style="display: none; color: red;"></div>
+<button class="checkout-btn">CHECKOUT</button>
+<footer>
     <div class="frist-row-footer">
       <div class="f-logo-footer">
-        <img
-          src="./image/footer image/logoFooter.png"
-          alt=""
-          class="logo-footer"
-        />
+        <img src="./image/footer image/logoFooter.png" alt="" class="logo-footer">
       </div>
       <div class="s-topl-footer">
         <h3 style="background: none" class="footer-top-heading">TOP LINKS</h3>
@@ -82,58 +77,30 @@
       <div class="t-email-footer">
         <h3 style="background: none" class="footwe-news-head">NEWS LETTER</h3>
         <div style="background: none" class="input-group">
-          <input
-            type="email"
-            class="input-email"
-            id="Email"
-            name="Email"
-            placeholder="codearcade@ca20.lk"
-            required="true"
-          />
-          <input class="button--submit" value="Subscribe" type="submit"/>
+          <input type="email" class="input-email" id="Email" name="Email" placeholder="codearcade@ca20.lk" required="true">
+          <input class="button--submit" value="Subscribe" type="submit">
         </div>
         <div style="background: none" class="imgpayment">
-          <img
-            style="background: none"
-            src="./image/footer image/pay 1.png"
-            alt=""
-            srcset=""
-          />
+          <img style="background: none" src="./image/footer image/pay 1.png" alt="" srcset="">
         </div>
       </div>
       <div class="followus">
         <h3 style="background: none" class="follow">Follow us</h3>
         <div style="background: none" class="socialicon1">
-          <a class="social-media-icon" href="#"
-            ><img
-              class="social-media-icon"
-              src="./image/footer image/🦆 icon _Facebook v1_.png"
-              alt=""
-              srcset=""
-          /></a>
-          <a class="social-media-icon" href="#"
-            ><img
-              class="social-media-icon"
-              src="./image/footer image/🦆 icon _Instagram_.png"
-              alt=""
-              srcset=""
-          /></a>
+          <a class="social-media-icon" href="#">
+            <img class="social-media-icon" src="./image/footer image/🦆 icon _Facebook v1_.png" alt="" srcset="">
+          </a>
+          <a class="social-media-icon" href="#">
+            <img class="social-media-icon" src="./image/footer image/🦆 icon _Instagram_.png" alt="" srcset="">
+          </a>
         </div>
         <div style="background: none" class="socialicon1">
-          <a class="social-media-icon" href="#"
-            ><img
-              class="social-media-icon"
-              src="./image/footer image/🦆 icon _Linkedin_.png"
-              alt=""
-              srcset=""
-          /></a>
-          <a class="social-media-icon" href="#"
-            ><img
-              class="social-media-icon"
-              src="./image/footer image/🦆 icon _Twitter_.png"
-              alt=""
-              srcset=""
-          /></a>
+          <a class="social-media-icon" href="#">
+            <img class="social-media-icon" src="./image/footer image/🦆 icon _Linkedin_.png" alt="" srcset="">
+          </a>
+          <a class="social-media-icon" href="#">
+            <img class="social-media-icon" src="./image/footer image/🦆 icon _Twitter_.png" alt="" srcset="">
+          </a>
         </div>
       </div>
     </div>
@@ -142,5 +109,6 @@
     </div>
   </footer>
 
-  </body>
-  </html>
+<script src="cart.js"></script>
+</body>
+</html>

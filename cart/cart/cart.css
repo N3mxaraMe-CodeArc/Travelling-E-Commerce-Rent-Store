@@ -84,10 +84,16 @@ header .shopping{
   width: 100px;
   height: 100px;
 }
-.remove-icon{
-  size: 50px;
-  margin-left: 1rem;
-}.table-row{
+
+#empty-cart-message{
+  text-align: center;
+  color: #fdf9f9;
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: 12rem;
+  
+}
+.table-row{
   font-size: 25px;
   font-weight: 500;
   color: azure;
@@ -97,4 +103,66 @@ a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
+.checkout-img{
+  margin-left: 7.5rem;
+}
+.remove-button{
+  margin-left: 2rem;
+  background-color: rgb(218, 233, 233);
+  color: #0f0f0f;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  padding: 5px 10px;
+}
+.remove-button:hover{
+  background-color: aqua;
+  box-shadow: #0f0f0f;
+}
+#item-names {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
 
+#price-tag {
+  color: rgb(8, 8, 8);
+  font-weight: 400;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#quantity-tag {
+  color: rgb(15, 15, 15);
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#sub-total {
+  font-weight: 300;
+  color: rgb(12, 12, 12);
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.checkout-btn{
+  width: 18rem;
+  height: 4.7rem;
+  font-size: 1.8rem;
+  background-color: rgb(7, 199, 109);
+  border-radius: 28px;
+  color: #02244b;
+  margin-left: 75%;
+  margin-top: 20rem;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.total-row{
+  font-size:40px;
+  color: azure;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+}
