@@ -20,6 +20,7 @@ h3 {
   text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
+  /* background: none; */
 }
 
 h5 {
@@ -90,7 +91,7 @@ h5 {
   background: none;
   display: flex;
   margin-top: 6rem;
-  color: seagreen;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
 }
 
@@ -108,6 +109,7 @@ h5 {
 
 .ratingdis textarea {
   /* padding: 0; */
+  width: 100%;
   margin: 0;
   margin-top: 0;
 }
@@ -137,16 +139,15 @@ form .button-submit-feedback {
   width: 7rem;
   height: 3rem;
   /* display: flex; */
-  
 }
 
-.submitbtn-feedback{
+.submitbtn-feedback {
   display: grid;
   justify-content: end;
   margin-right: 5rem;
 }
 
-.submitbtn-feedback .button-submit-feedback{
+.submitbtn-feedback .button-submit-feedback {
   background: none;
   /* border: 1px solid seagreen; */
   font-size: 1rem;
@@ -159,11 +160,47 @@ form .button-submit-feedback {
   /* background-image: linear-gradient(315deg, aqua 0%, #00ffff 74%); */
 }
 
-.submitbtn-feedback .button-submit-feedback:hover{
+.submitbtn-feedback .button-submit-feedback:hover {
   background-color: #006aff;
   transform: scale(1.04);
   transition: 0.5s ease-in;
   /* border-radius: 20px; */
   /* box-shadow: 0 4px 4px 2px #006aff; */
   border: none;
+}
+
+.select-items{
+  margin-top: 5rem;
+}
+
+select#select {
+  width: 30vh;
+  height: 2.5rem;
+  border-radius: 20px;
+  padding-left: 1rem;
+}
+
+select#select option {
+  background: none;
+  border-radius: 15px;
+}
+
+.problemdis{
+  margin: 0 auto;
+  margin-top: 5rem;
+  background: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.problemdis label:hover{
+color: #094ca8;
+}
+
+.problemdis textarea{
+  margin-top: 2rem;
+  width : 60rem;
+  border-radius: 20px;
+  padding-top: 20px;
 }

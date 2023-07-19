@@ -60,8 +60,8 @@ nav ul li a:hover,
   --_p: 100%;
 }
 
-
-nav ul li a {
+nav ul li a,
+.active {
   text-decoration: none;
   color: white;
   --s: 0.1em;
@@ -78,10 +78,9 @@ nav ul li a {
 nav ul {
   list-style: none;
 }
-.active{
+.active {
   color: aqua;
 }
-
 
 .navlinks button {
   font-size: 0.6rem;
@@ -103,8 +102,8 @@ nav ul {
   border: none;
   margin-top: 0;
   cursor: pointer;
- }
- 
+}
+
 .navlinks button:after {
   content: " ";
   width: 0%;
@@ -114,14 +113,14 @@ nav ul {
   transition: all 0.4s ease-in-out;
   right: 0;
   margin-top: 0.5rem;
- }
- 
+}
+
 .navlinks button:hover::after {
   right: auto;
   left: 0;
   width: 100%;
- }
- 
+}
+
 .navlinks button span {
   text-align: center;
   text-decoration: none;
@@ -133,27 +132,27 @@ nav ul {
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
- }
- 
+}
+
 .navlinks button:hover span {
   font-weight: 700;
   color: #183153;
   animation: scaleUp 0.3s ease-in-out;
- }
- 
- @keyframes scaleUp {
+}
+
+@keyframes scaleUp {
   0% {
-   transform: scale(1);
+    transform: scale(1);
   }
- 
+
   50% {
-   transform: scale(0.95);
+    transform: scale(0.95);
   }
- 
+
   100% {
-   transform: scale(1);
+    transform: scale(1);
   }
- }
+}
 
 .frist-row-footer {
   background-color: #072428;
@@ -196,10 +195,10 @@ nav ul {
   /* padding-right: 5rem; */
 }
 
-.items-t-footer:hover{
-   color: #3898ec;
-   transition: 0.5s ease;
-   transform: scale(1.04);
+.items-t-footer:hover {
+  color: #3898ec;
+  transition: 0.5s ease;
+  transform: scale(1.04);
 }
 
 .input-group {
@@ -242,28 +241,28 @@ nav ul {
   outline: none;
 }
 
-.imgpayment{
-   cursor: pointer;
+.imgpayment {
+  cursor: pointer;
 }
 
-.followus{
-   background: none;
-   margin-right: 3rem;
+.followus {
+  background: none;
+  margin-right: 3rem;
 }
 
-.social-media-icon{
-   background: none;
-   height: 2.5rem;
+.social-media-icon {
+  background: none;
+  height: 2.5rem;
 }
 
-.social-media-icon:hover{
-   transform: scale(1.15);
-   transition: 1s ease;
+.social-media-icon:hover {
+  transform: scale(1.15);
+  transition: 1s ease;
 }
 
-.product-text{
-   color: rgb(156, 152, 152);
-   font-family: 'Open Sans', sans-serif;
-   font-size: 15px;
-   padding-bottom: 15px;
+.product-text {
+  color: rgb(156, 152, 152);
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding-bottom: 15px;
 }

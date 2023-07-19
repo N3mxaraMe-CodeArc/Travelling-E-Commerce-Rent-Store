@@ -34,7 +34,7 @@
       <nav class="navlinks">
         <ul class="navlinks-group">
           <li class="nav-links"><a href="../Home2/index.html">home</a></li>
-          <li class="nav-links"><a href="#">shop</a></li>
+          <li class="nav-links"><a href="../cart/cart/shop.html">shop</a></li>
           <li class="nav-links"><a href="#">thumbnail</a></li>
           <li class="nav-links"><a href="#">sitemap</a></li>
           <li class="nav-links"><a href="#">quiz</a></li>
@@ -158,26 +158,97 @@
               />
               <label for="9">9</label>
             </div>
-            <div class="ratingdis">
-              <label class="ratinglabel" for="textarea"
-                >Why are you rate us :
-              </label>
-              <textarea
-                name="textarea"
-                id="textarea"
-                rows="10"
-                cols="50"
-                required="true"
-              >
-              </textarea>
+            <div
+              style="
+                background: none;
+                display: flex;
+                margin: 0 auto;
+                padding: 0;
+                padding-top: 3rem;
+                margin-right: 16%;
+              "
+              class="discription"
+            >
+              <div class="ratingdis">
+                <label class="ratinglabel" for="textarea"
+                  >Why are you rate us :
+                </label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="10"
+                  cols="50"
+                  required="true"
+                >
+                </textarea>
+              </div>
+              <div class="ratingdis">
+                <label class="ratinglabel" for="textarea"
+                  >How do you feel our website :
+                </label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="10"
+                  cols="50"
+                  required="true"
+                >
+                </textarea>
+              </div>
             </div>
           </div>
-          <div style="background: none;" class="submitbtn-feedback">
+
+          <div
+            style="background: none; margin-left: 10rem"
+            class="select-items"
+          >
+            <label style="background: none" for="Country"
+              >Select your country :
+            </label>
+            <select
+              style="background: none"
+              name="Country"
+              class="select-obj"
+              id="select"
+            >
+              <option class="options" value="Sri Lanka">Sri Lanka</option>
+              <option class="options" value="Australia">Australia</option>
+              <option class="options" value="India">India</option>
+              <option class="options" value="Singapore">Singapore</option>
+              <option class="options" value="Other">Other</option>
+            </select>
+            <label style="background: none; margin-left: 3rem" for="Answer"
+              >Do you find Answer to your Quection :
+            </label>
+            <select
+              style="background: none"
+              name="Answer"
+              class="select-obj"
+              id="select"
+            >
+              <option class="options" value="Yes">Yes</option>
+              <option class="options" value="No">No</option>
+              <option class="options" value="Havent">Havent Idea</option>
+            </select>
+          </div>
+          <div class="problemdis">
+            <label style="background: none;" for="Quection">Can I know What is Your Quetion..?</label>
+          <textarea
+            name="textarea"
+            id="textarea"
+            rows="10"
+            cols="50"
+            required="true"
+          ></textarea>
+          </div>
+          <div style="background: none" class="submitbtn-feedback">
             <input
+              onclick="openPopup()"
               type="submit"
               class="button-submit-feedback"
               value="Submit"
             />
+            
           </div>
         </form>
       </section>
