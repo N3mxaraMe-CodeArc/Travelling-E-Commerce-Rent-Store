@@ -1,3 +1,6 @@
+footer{
+  margin-top: 33rem;
+}
 .frist-row-footer {
     background-color: #072428;
     display: flex;
@@ -53,7 +56,7 @@
   
   .input-email {
     min-height: 50px;
-    max-width: 150px;
+    max-width: 203px;
     padding: 0 1rem;
     color: #fff;
     font-size: 15px;
