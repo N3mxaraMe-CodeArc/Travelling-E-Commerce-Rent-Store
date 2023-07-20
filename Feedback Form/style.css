@@ -19,7 +19,8 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  
   /* background: none; */
 }
 
