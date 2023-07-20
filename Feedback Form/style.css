@@ -53,6 +53,21 @@ h5 {
   justify-content: center;
 }
 
+@keyframes headerhero {
+  from {
+    transform: translateX(-400px);
+  }
+  to {
+    transform: translateX(center);
+  }
+}
+
+.hero-header {
+  animation-name: headerhero;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
 .contact {
   margin-right: 1.5rem;
 }
