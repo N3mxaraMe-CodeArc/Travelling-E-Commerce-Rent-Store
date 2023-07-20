@@ -104,3 +104,12 @@ header{
    font-weight: 300;
 }
 
+.author{
+   text-align: end;
+}
+
+.author a{
+   text-decoration: none;
+   color: #359381;
+   font-family: "Merienda", cursive;
+}
