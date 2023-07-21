@@ -1,14 +1,8 @@
-
-
-.back{
-  background-position: center;
+body{
+  background-image: url(./images/green-tent-woods-background-beautiful-lake-camping-tent-pine-forest_431724-3052.avif) ;
   background-repeat: no-repeat;
-  background-size: cover;
-}
-video{
   width: 100%;
   height: 100%;
-  margin: auto;
 }
 header{
   position: absolute;
