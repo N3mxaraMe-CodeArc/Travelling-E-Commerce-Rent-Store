@@ -1,4 +1,6 @@
-  function addtocart(event) {
+(function () {
+  function addToCart(event) {
+
     // Get the selected item details
     var card = event.target.parentElement;
     var itemName = card.querySelector("h4").innerText;
@@ -24,7 +26,7 @@
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
     // Show a confirmation message or perform any other action
-    // alert("Item added to cart!");
+    alert("Item added to cart!");
 
     // Increment the value of the span tag
     var currentTotal = parseInt(document.getElementById("cartTotal").innerText);
@@ -32,5 +34,19 @@
     document.getElementById("cartTotal").innerText = newTotal;
   }
 
+  function init() {
+    var AddToCartButtons = document.getElementsByClassName("cart");
+
+    for (var i = 0; i < AddToCartButtons.length; i++) {
+      AddToCartButtons[i].addEventListener('click', addToCart, false);
+    }
+
+    var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    document.getElementById("cartTotal").innerText = cartItems.length;
+  }
+
+  init();
+
+})()
 
 

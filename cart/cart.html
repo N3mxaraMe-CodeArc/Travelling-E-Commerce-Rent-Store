@@ -9,28 +9,36 @@
   <link rel="icon" href="./image/logo.png" type="image/png"> 
 </head>
 <body>
-<header>
-    <img src="./image/logo.png" class="logo"/>
+  <header>
+    <img src="./image/logo.png" class="logo" />
     <nav class="navlinks">
-        <ul class="navlinks-group">
-            <li class="nav-links"><a href="">home</a></li>
-            <li class="nav-links"><a href="shop.html">shop</a></li>
-            <li class="nav-links"><a href="#">thumbnail</a></li>
-            <li class="nav-links"><a href="#">sitemap</a></li>
-            <li class="nav-links"><a href="#">aboutus</a></li>
-        </ul>
+      <ul class="navlinks-group">
+        <li class="nav-links"><a href="">home</a></li>
+        <li class="nav-links"><a href="shop.html" >shop</a></li>
+        <li class="nav-links"><a href="#">thumbnail</a></li>
+        <li class="nav-links"><a href="#">sitemap</a></li>
+        <li class="nav-links"><a href="#">aboutus</a></li>
+        <a class="active" href="cart.html">
+          <li class="nav-links">
+            <div class="cart-icon">
+              <div class="total" id="cartTotal">0</div>
+            </div>
+          </li>
+        </a>
+
+      </ul>
     </nav>
-</header>    
+  </header>   
 <hr>
-<table width="100%" border="3px" solid>
+<table class="table" width="100%">
   <thead>
     <tr class="table-row">
       <th>Remove</th>
       <th>&nbsp;Image</th>
       <th>Product</th>
-      <th>Price</th>
+      <th>Price (LKR)</th>
       <th>Quantity</th>
-      <th>Subtotal</th>
+      <th>Sub Total (LKR)</th>
     </tr>
   </thead>
   <tbody>
@@ -43,7 +51,7 @@
   </tfoot>
 </table>
 
-<div id="empty-cart-message" style="display: none; color: red;"></div>
+<div id="empty-cart-message" style="display: none; color: rgb(155, 155, 159);"></div>
 <button class="checkout-btn">CHECKOUT</button>
 <footer>
     <div class="frist-row-footer">

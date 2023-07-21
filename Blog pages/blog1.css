@@ -27,13 +27,6 @@ header{
    z-index: 100; 
 }
 
-/* .logo{
-   font-size: 2em;
-   color: #359381;
-   pointer-events: none;
-   margin-right: 270px;
-} */
-
 .logo{
    margin-top: -1rem;
    width: 9rem;

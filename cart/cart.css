@@ -1,0 +1,331 @@
+body {
+  margin: 0;
+  padding: 12px 24px;
+  background-color: #00424d;
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #87bfff;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlinks-group {
+  display: flex;
+  justify-content: end;
+  margin-left: 20rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.nav-links {
+  color: white;
+  padding-left: 1rem;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.nav-links:hover,
+nav ul li a:hover,
+.active {
+  color: aqua;
+  transform: scale(1.09);
+  transition: 0.5s ease;
+  --_p: 100%;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  --s: 0.1em;
+  --c: aqua;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.active {
+  color: aqua;
+}
+
+.navlinks {
+  margin-left: auto;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.navlinks button {
+  font-size: 0.6rem;
+  height: 3rem;
+  width: 6.5rem;
+  margin-left: 3rem;
+  padding-bottom: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #094ca8;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.navlinks button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #f0cf2c;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+  margin-top: 0.5rem;
+}
+
+.navlinks button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.navlinks button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlinks button:hover span {
+  font-weight: 700;
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+hr {
+  height: 0.2rem;
+  border: none;
+  background-color: #000;
+}
+
+.checkout-img {
+  width: 120px;
+}
+
+.bb {
+  width: 100px;
+  height: 100px;
+}
+
+#empty-cart-message {
+  text-align: center;
+  color: #fdf9f9;
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: 12rem;
+
+}
+
+.table-row {
+  font-size: 25px;
+  font-weight: 500;
+  color: azure;
+  align-self: auto;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.checkout-img {
+  /* margin-left: 7.5rem; */
+  margin: 0 auto;
+}
+
+.remove-button {
+  all: unset;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: rgb(219, 31, 31);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.remove-button:hover {
+  background-color: rgb(163, 19, 19);
+  transition: all 0.3s ease-in;
+}
+
+.item-names {
+  font-size: 22px;
+}
+
+.price-tag {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.quantity-tag {
+  font-size: 22px;
+  text-align: center;
+  font-family: monospace;
+
+}
+
+.sub-total {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.checkout-btn {
+  all: unset;
+  margin-left: auto;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(15, 219, 124);
+  border-radius: 12px;
+  color: #02244b;
+  margin-top: 36px;
+  padding: 12px;
+}
+
+.checkout-btn:hover{
+  background-color: rgb(23, 185, 109);
+  transition: all 0.1s ease-in;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.total-row {
+  font-size: 24px;
+  color: azure;
+  font-weight: 400;
+}
+
+.decorate {
+  margin-top: 0.8rem;
+}
+
+#total-subtotal,
+.sub-total,
+.price-tag {
+  text-align: right;
+  font-family: monospace;
+  padding: 12px;
+}
+
+
+.active {
+  color: aqua;
+}
+
+
+.logo {
+  height: 7rem;
+  cursor: pointer;
+}
+
+
+
+.cart-icon {
+  background-image: url("./image/shopping.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+#cartTotal {
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+table,
+th,
+td {
+  margin-top: 36px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background: #0a2b31;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+td {
+  padding: 0 8px;
+  color: rgb(210, 210, 210);
+  text-align: center;
+}

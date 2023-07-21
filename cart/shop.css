@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #00424d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #87bfff;
+  height: 20vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  padding: 12px;
+}
+
+hr {
+  height: 0.2rem;
+  border: none;
+  background-color: #000;
+}
+
+/* -----------------------------nav bar-------------------------------- */
+
+.active {
+  color: aqua;
+}
+
+
+.logo {
+  height: 7rem;
+  cursor: pointer;
+}
+
+.navlinks-group {
+  display: flex;
+  justify-content: end;
+  margin-left: 20rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.nav-links {
+  color: white;
+  padding-left: 1rem;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.nav-links:hover,
+nav ul li a:hover,
+.active {
+  color: aqua;
+  transform: scale(1.09);
+  transition: 0.5s ease;
+  --_p: 100%;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  --s: 0.1em;
+  --c: aqua;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+nav ul {
+  list-style: none;
+}
+
+.navlinks {
+  margin-left: auto;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.navlinks button {
+  font-size: 0.6rem;
+  height: 3rem;
+  width: 6.5rem;
+  margin-left: 3rem;
+  padding-bottom: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #094ca8;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.navlinks button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #f0cf2c;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+  margin-top: 0.5rem;
+}
+
+.navlinks button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.navlinks button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.navlinks button:hover span {
+  font-weight: 700;
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.cart-icon {
+  background-image: url("./image/shopping.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+
+/* -------------------------------------------------------------------- */
+.card {
+  height: 440px;
+  width: 20%;
+  border-radius: 25px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+  >img {
+    overflow: visible;
+    width: 280px;
+    height: 230px;
+    margin-left: -2rem;
+    background: transparent;
+    transform: rotate(0deg) translateX(20px);
+  }
+
+  >p {
+    text-align: left;
+    text-overflow: wrap;
+    padding: 20px;
+  }
+
+  >button {
+    height: 55px;
+    border-radius: 5px;
+    background: #0c4301;
+    color: rgb(224, 232, 226);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 20px;
+  }
+
+  >button:hover {
+    cursor: pointer;
+    background: #04bd86;
+    box-shadow: 0 0 10px rgba(11, 11, 11, 0.2), 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  animation: scaleup 0.1s forwards;
+
+  >img {
+    animation: rotate 0.7s forwards;
+  }
+}
+
+.price {
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: 700;
+  margin-top: 0.7rem;
+}
+
+.price:hover {
+  cursor: pointer;
+  color: #00424d;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(20px);
+  }
+
+  25% {
+    transform: rotate(20deg) translateX(20px) scale(1.1);
+  }
+
+  50% {
+    transform: rotate(0deg) translateX(20px);
+  }
+
+  75% {
+    transform: rotate(-20deg) translateX(20px) scale(1.1);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(20px);
+  }
+}
+
+@keyframes scaleup {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2),
+      0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px #04331d, 0 0 70px #02422e,
+      0 0 80px #024029, 0 0 100px #024130, 0 0 150px #014432;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cart {
+  height: 3rem;
+  /* font-family: 'IBM Plex Mono'; */
+  font-weight: 700;
+  margin-right: 6rem;
+  margin-top: 2.2rem;
+  text-transform: uppercase;
+  background-color: #151414;
+  padding: 0.75rem 1rem;
+  border-radius: 0.4rem;
+  border: solid 0.125rem #242323;
+  box-shadow: 0.4rem 0.4rem #162523;
+  transition:
+    transform 50ms, box-shadow 50ms;
+}
+
+.cart:active {
+  transform: translate(00.125rem, 0.125rem);
+  box-shadow: 0.125rem 0.125rem #121212;
+}
+
+.quantity {
+  width: 2rem;
+  margin-top: -4rem;
+  margin-left: 8rem;
+}
+
+.size {
+  width: 4rem;
+  height: 2.8rem;
+  /* background-color: #348d6e; */
+  margin-top: -0.5rem;
+  border-radius: 8px;
+  color: rgb(0, 0, 0);
+  box-shadow: #121212;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 0.75rem;
+}
+
+.first-row {
+  margin: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*------------------------------------------ card icon windows----------------------- */
+.cart-card {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: #342c27;
+  height: 100vh;
+  transition: 0.5s;
+  padding-right: 20px;
+}
+
+.cart-card h1 {
+  color: #ffd600;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-card .checkout {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.cart-card .checkout div {
+  background-color: #FFA90C;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-card .checkout div:nth-child(2) {
+  background-color: #b7b9bc;
+}
+
+.active .cart-card {
+  left: calc(100% - 520px);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.cart-add {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  background-color: brown;
+  color: white;
+  margin: 10px 25px;
+
+}
+
+.deleteRow {
+  display: none;
+}
+
+
+
+#cartTotal{
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+
+

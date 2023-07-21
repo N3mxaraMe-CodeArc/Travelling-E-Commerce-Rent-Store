@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Vista</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="checkout.css">
+  <link rel="stylesheet" href="./footer.css">
+  <link rel="icon" href="./image/logo.png" type="image/png">
+</head>
+
+<body>
+  <header>
+    <img src="./image/logo.png" class="logo" />
+    <nav class="navlinks">
+      <ul class="navlinks-group">
+        <li class="nav-links"><a href="#">home</a></li>
+        <li class="nav-links"><a href="shop.html" >shop</a></li>
+        <li class="nav-links"><a href="#">thumbnail</a></li>
+        <li class="nav-links"><a href="#">sitemap</a></li>
+        <li class="nav-links"><a href="#">aboutus</a></li>
+        <a class="active" href="cart.html">
+          <li class="nav-links">
+            <div class="cart-icon">
+              <div class="total" id="cartTotal">0</div>
+            </div>
+          </li>
+        </a>
+
+      </ul>
+    </nav>
+  </header> 
+
+  <div class="container">
+
+    <table class="table" width="100%">
+      <thead>
+        <tr class="table-row">
+          <!-- <th>Remove</th> -->
+          <th>&nbsp;Image</th>
+          <th>Product</th>
+          <th>Price (LKR)</th>
+          <th>Quantity</th>
+          <th>Sub Total (LKR)</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr class="total-row">
+          <th colspan="4S">Total</th>
+          <td id="total-subtotal"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <form id="checkoutForm" action="">
+
+      <div class="row">
+
+        <div class="col">
+
+          <h3 class="title">Billing Address</h3>
+
+          <div class="inputBox">
+            <span>Full Name :</span>
+            <input type="text" placeholder="Enter your name" required maxlength="20">
+          </div>
+          <div class="inputBox">
+            <span>Email :</span>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          <div class="inputBox">
+            <span>Address :</span>
+            <input type="text" placeholder="Enter your address">
+          </div>
+          <div class="inputBox">
+            <span>City :</span>
+            <input type="text" placeholder="Your city">
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>State :</span>
+              <input type="text" placeholder="Sri Lanka">
+            </div>
+            <div class="inputBox">
+              <span>Zip Code :</span>
+              <input type="text" placeholder="70000" required maxlength="5">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col">
+
+          <h3 class="title">Payment</h3>
+
+          <div class="inputBox">
+            <span>Cards accepted :</span>
+            <img src="./image/card_img.png" alt="">
+          </div>
+
+
+          <div class="inputBox">
+            <span>Name on card :</span>
+            <input type="text" placeholder="mr.dinujaya">
+          </div>
+
+          <div class="inputBox">
+            <span>Credit card number :</span>
+            <input type="tel" placeholder="XXXX - XXXX - XXXX - XXXX" required maxlength="16">
+          </div>
+          <div class="inputBox">
+            <span>Expire month:</span>
+            <input type="month" placeholder="january" required>
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>Expire year :</span>
+              <input type="number" placeholder="2030"  maxlength="4">
+            </div>
+            <div class="inputBox">
+              <span>CVV Number :</span>
+              <input type="text" placeholder="123" maxlength="3" required>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="end">
+        <input type="reset" value="clear changes" class="clear-btn">
+        <input type="submit" value="Pay" class="submit-btn">
+      </div>
+
+    </form>
+  </div>
+
+  <footer>
+    <div class="frist-row-footer">
+      <div class="f-logo-footer">
+        <img src="./image/footer image/logoFooter.png" alt="" class="logo-footer" />
+      </div>
+      <div class="s-topl-footer">
+        <h3 style="background: none" class="footer-top-heading">TOP LINKS</h3>
+        <div style="background: none" class="footer-t-items">
+          <div style="background: none" class="footer-top-items1">
+            <a href="#" class="items-t-footer">HOME</a>
+            <a href="#" class="items-t-footer">SHOP</a>
+            <a href="#" class="items-t-footer">FEEDBACK</a>
+          </div>
+          <div style="background: none" class="footer-top-items2">
+            <a href="#" class="items-t-footer">ABOUT US</a>
+            <a href="#" class="items-t-footer">THUMBNAIL</a>
+            <a href="#" class="items-t-footer">CHECKOUT</a>
+          </div>
+        </div>
+      </div>
+      <div style="background: none" class="t-exter-footer">
+        <h3 style="background: none" class="footer-ex-links">
+          EXTERNAL LINKS
+        </h3>
+        <div class="items-ex-footer">
+          <a href="#" class="items-t-footer">SITE MAP</a>
+          <a href="#" class="items-t-footer">EXTERNAL SOURCES</a>
+        </div>
+      </div>
+      <div class="t-email-footer">
+        <h3 style="background: none" class="footwe-news-head">NEWS LETTER</h3>
+        <div style="background: none" class="input-group">
+          <input type="email" class="input-email" id="Email" name="Email" placeholder="codearcade@ca20.lk"
+            required="true" />
+          <input class="button--submit" value="Subscribe" type="submit" />
+        </div>
+        <div style="background: none" class="imgpayment">
+          <img style="background: none" src="./image/footer image/pay 1.png" alt="" srcset="" />
+        </div>
+      </div>
+      <div class="followus">
+        <h3 style="background: none" class="follow">Follow us</h3>
+        <div style="background: none" class="socialicon1">
+          <a class="social-media-icon" href="#"><img class="social-media-icon"
+              src="./image/footer image/🦆 icon _Facebook v1_.png" alt="" srcset="" /></a>
+          <a class="social-media-icon" href="#"><img class="social-media-icon"
+              src="./image/footer image/🦆 icon _Instagram_.png" alt="" srcset="" /></a>
+        </div>
+        <div style="background: none" class="socialicon1">
+          <a class="social-media-icon" href="#"><img class="social-media-icon"
+              src="./image/footer image/🦆 icon _Linkedin_.png" alt="" srcset="" /></a>
+          <a class="social-media-icon" href="#"><img class="social-media-icon"
+              src="./image/footer image/🦆 icon _Twitter_.png" alt="" srcset="" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="second-row-footer">
+      <h3 class="product-text">@2023 POWERED BY CA2.0</h3>
+    </div>
+  </footer>
+  <script src="checkout.js"></script>
+
+</body>
+
+</html>

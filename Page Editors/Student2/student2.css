@@ -1,0 +1,45 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   display: flex;
+   flex-direction: column;
+}
+
+.intro , .title , .content{
+   width: 100%;
+   text-align: center;
+   align-items: center;
+   font-family: 'Courier Prime', monospace;
+}
+
+.intro{
+   height: 120px;
+   font-size: 20px;
+   padding-top: 25px;
+}
+
+.content{
+   background-color: #9c99f1;
+   height: 995px;
+   padding-top: 22px;
+}
+
+.content a{
+   color: black;
+}
+
+p{
+   font-weight: bold;
+   margin: 20px 0 10px 0;
+   font-size: 25px;
+}
+
+.title{
+   background-color: #716cf5;
+   height: 120px;
+   font-size: 100px;
+   padding-top: 20px;
+}
