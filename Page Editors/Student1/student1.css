@@ -1,0 +1,47 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   display: flex;
+   flex-direction: column;
+}
+
+.intro , .title , .content{
+   width: 100%;
+   text-align: center;
+   align-items: center;
+   font-family: 'Courier Prime', monospace;
+   /* line-height: 25px; */
+   /* margin: auto; */
+}
+
+.intro{
+   height: 120px;
+   font-size: 20px;
+   padding-top: 25px;
+}
+
+.content{
+   background-color: #F49059;
+   height: 680px;
+   padding-top: 20px;
+}
+
+.content a{
+   color: black;
+}
+
+p{
+   font-weight: bold;
+   margin: 20px 0 10px 0;
+   font-size: 25px;
+}
+
+.title{
+   background-color: #F49059;
+   height: 120px;
+   font-size: 100px;
+   padding-top: 20px;
+}

@@ -34,7 +34,7 @@
       <nav class="navlinks">
         <ul class="navlinks-group">
           <li class="nav-links"><a href="../Home2/index.html">home</a></li>
-          <li class="nav-links"><a href="#">shop</a></li>
+          <li class="nav-links"><a href="../cart/cart/shop.html">shop</a></li>
           <li class="nav-links"><a href="#">thumbnail</a></li>
           <li class="nav-links"><a href="#">sitemap</a></li>
           <li class="nav-links"><a href="#">quiz</a></li>
@@ -47,7 +47,7 @@
     </header>
     <div class="container">
       <section class="heroSection">
-        <h1>
+        <h1 class="hero-header">
           <span style="letter-spacing: 10px; color: aqua">Support</span
           ><br />Use the below Form to Feedback Us
         </h1>
@@ -158,22 +158,223 @@
               />
               <label for="9">9</label>
             </div>
-            <div class="ratingdis">
-              <label class="ratinglabel" for="textarea"
-                >Why are you rate us :
-              </label>
-              <textarea
-                name="textarea"
-                id="textarea"
-                rows="10"
-                cols="50"
-                required="true"
-              >
-              </textarea>
+            <div
+              style="
+                background: none;
+                display: flex;
+                margin: 0 auto;
+                padding: 0;
+                padding-top: 3rem;
+                margin-right: 16%;
+              "
+              class="discription"
+            >
+              <div class="ratingdis">
+                <label class="ratinglabel" for="textarea"
+                  >Why are you rate us :
+                </label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="10"
+                  cols="50"
+                  required="true"
+                >
+                </textarea>
+              </div>
+              <div class="ratingdis">
+                <label class="ratinglabel" for="textarea"
+                  >How do you feel our website :
+                </label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="10"
+                  cols="50"
+                  required="true"
+                >
+                </textarea>
+              </div>
             </div>
           </div>
-          <div style="background: none;" class="submitbtn-feedback">
+
+          <div
+            style="background: none; margin-left: 10rem"
+            class="select-items"
+          >
+            <label style="background: none" for="Country"
+              >Select your country :
+            </label>
+            <select
+              style="background: none"
+              name="Country"
+              class="select-obj"
+              id="select"
+            >
+              <option value="" disabled selected>
+                -- Select your Country --
+              </option>
+              <option class="options" value="Sri Lanka">Sri Lanka</option>
+              <option class="options" value="Australia">Australia</option>
+              <option class="options" value="India">India</option>
+              <option class="options" value="Singapore">Singapore</option>
+              <option class="options" value="Other">Other</option>
+            </select>
+            <label style="background: none; margin-left: 3rem" for="Answer"
+              >Do you find Answer to your Quection :
+            </label>
+            <select
+              style="background: none"
+              name="Answer"
+              class="select-obj"
+              id="select"
+              required="true"
+            >
+              <option value="" disabled selected>--Select Your Idea ---</option>
+              <option class="options" value="Yes">Yes</option>
+              <option class="options" value="No">No</option>
+              <option class="options" value="Havent">Havent Idea</option>
+            </select>
+          </div>
+
+          <div class="problemdis">
+            <label style="background: none" for="Quection"
+              >Can I know what your question is..?</label
+            >
+            <textarea
+              name="textarea"
+              id="textarea"
+              rows="10"
+              cols="50"
+              required="true"
+            ></textarea>
+          </div>
+          <br />
+          <hr />
+          <div style="background: none" class="support-table">
+            <h3>Support Us</h3>
+            <table style="background: none">
+              <tr>
+                <th></th>
+                <th>Week</th>
+                <th>Good</th>
+                <th>Very Good</th>
+                <th>Attractive</th>
+              </tr>
+              <tr>
+                <th>Content</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option1" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option1" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option1"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option1"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>Blog Post</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option2" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option2" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option2"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option2"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>Detail</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option3" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option3" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option3"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option3"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>Rent Shop</th>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="week" name="option4" checked="checked" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="good" name="option4" />
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="very-good" name="option4"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+                <td>
+                  <label class="check-container">
+                    <input type="checkbox" value="Excellent" name="option4"/>
+                    <div class="checkmark"></div>
+                  </label>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div style="background: none" class="submitbtn-feedback">
             <input
+              onclick="openPopup()"
               type="submit"
               class="button-submit-feedback"
               value="Submit"
@@ -181,7 +382,105 @@
           </div>
         </form>
       </section>
+      <footer>
+        <div class="frist-row-footer">
+          <div class="f-logo-footer">
+            <img
+              src="../Home2/img/footer image/logoFooter.png"
+              alt=""
+              class="logo-footer"
+            />
+          </div>
+          <div class="s-topl-footer">
+            <h3 style="background: none" class="footer-top-heading">TOP LINKS</h3>
+            <div style="background: none" class="footer-t-items">
+              <div style="background: none" class="footer-top-items1">
+                <a href="#" class="items-t-footer">HOME</a>
+                <a href="#" class="items-t-footer">SHOP</a>
+                <a href="#" class="items-t-footer">FEEDBACK</a>
+              </div>
+              <div style="background: none" class="footer-top-items2">
+                <a href="#" class="items-t-footer">ABOUT US</a>
+                <a href="#" class="items-t-footer">THUMBNAIL</a>
+                <a href="#" class="items-t-footer">CHECKOUT</a>
+              </div>
+            </div>
+          </div>
+          <div style="background: none" class="t-exter-footer">
+            <h3 style="background: none" class="footer-ex-links">
+              EXTERNAL LINKS
+            </h3>
+            <div class="items-ex-footer">
+              <a href="#" class="items-t-footer">SITE MAP</a>
+              <a href="#" class="items-t-footer">EXTERNAL SOURCES</a>
+              <a href="../Page Editors/Student1/student1.html" class="items-t-footer">PAGE EDITOR</a>
+            </div>
+          </div>
+          <div class="t-email-footer">
+            <h3 style="background: none" class="footwe-news-head">NEWS LETTER</h3>
+            <div style="background: none" class="input-group">
+              <input
+                type="email"
+                class="input-email"
+                id="Email"
+                name="Email"
+                placeholder="codearcade@ca20.lk"
+                required="true"
+              />
+              <input class="button--submit" value="Subscribe" type="submit" />
+            </div>
+            <div style="background: none" class="imgpayment">
+              <img
+                style="background: none"
+                src="../Home2/img/footer image/pay 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="followus">
+            <h3 style="background: none" class="follow">Follow us</h3>
+            <div style="background: none" class="socialicon1">
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Facebook v1_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Instagram_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+            </div>
+            <div style="background: none" class="socialicon1">
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Linkedin_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Twitter_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="second-row-footer">
+          <h3 class="product-text">@2023 POWERED BY CA2.0</h3>
+        </div>
+      </footer>
     </div>
+    <!-- need to create a form -->
+
     <script src="./script.js"></script>
   </body>
 </html>
