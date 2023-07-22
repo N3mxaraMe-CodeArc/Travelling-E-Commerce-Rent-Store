@@ -1,14 +1,9 @@
-
-
-.back{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-video{
+body{
+  background-image: url(./images/lesly-derksen-F4fH5dAfZnE-unsplash.jpg) ;
   width: 100%;
   height: 100%;
-  margin: auto;
+  background-size: cover;
+  overflow: hidden;
 }
 header{
   position: absolute;
