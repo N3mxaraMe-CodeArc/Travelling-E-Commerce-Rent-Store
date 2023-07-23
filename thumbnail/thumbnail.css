@@ -138,12 +138,38 @@ body{
     margin-top: 20px;
 }
 .des{
-    background-color: #00424d;
+    /* background-color: #00424d; */
+    text-shadow: 0 4px 4px 0 #000;
 }
 .prev,
 .next {
   background: none;
   border: none;
+}
+
+.prev:hover,
+.next:hover{
+    transform: scale(1.08);
+    transition: 1s ease;
+}
+
+.slider button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+    width: 9.3rem;
+    height: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px 0 #000000;
+    font-weight: 600;
+    /* font-family: 'Courier New', Courier, monospace; */
+}
+
+.slider button:hover{
+    background-color: rgb(174, 206, 35);
+    color: #000;
+    /* box-shadow: 0 4px 4px 0 red; */
+    /* transform: scale(1.09); */
+    transition: 0.5s ease;
 }
 
 

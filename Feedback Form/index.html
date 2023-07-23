@@ -61,9 +61,10 @@
         >
           <div class="name">
             <h5>First Name</h5>
-            <input style="margin-right: 5rem" type="text" />
+            <input id="firstName" style="margin-right: 5rem" type="text" />
+            
             <h5 style="margin-left: 2rem">Last Name</h5>
-            <input type="text" />
+            <input id="lastName" type="text" />
           </div>
           <div class="contact">
             <h5 style="margin-left: 3rem">Contact</h5>
@@ -78,7 +79,12 @@
               type="email"
               required="true"
               placeholder="codearcade@ca20.lk"
+              id="email"
             />
+            <h5></h5>
+          </div>
+          <div class="validation">
+            <h5 id="name-validation-alert"></h5>
           </div>
 
           <div class="rating">
@@ -374,7 +380,7 @@
 
           <div style="background: none" class="submitbtn-feedback">
             <input
-              onclick="openPopup()"
+            onclick="SubmitHandler()"
               type="submit"
               class="button-submit-feedback"
               value="Submit"
