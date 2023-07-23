@@ -67,6 +67,7 @@ footer{
   
   .button--submit {
     min-height: 50px;
+    margin-left: 5px;
     padding: 0.5em 1em;
     border: none;
     border-radius: 0 6px 6px 0;
@@ -91,6 +92,7 @@ footer{
   
   .imgpayment{
      cursor: pointer;
+     margin-top: 10px;
   }
   
   .followus{
