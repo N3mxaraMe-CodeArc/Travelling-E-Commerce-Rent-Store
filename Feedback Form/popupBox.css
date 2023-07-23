@@ -1,63 +1,72 @@
 *{
-   margin:0;
+   margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Poppins',sans-serif;
-}
-.container{
-   width: 100%;
-   height: 100vh;
-   background: #3c5077;
-   display: flex;
-   align-items: center;
-   justify-content: center;
 }
 
-.popup{
-   width: 400px;
-   background: #fff;
-   border-radius: 6px;
-   position: absolute;
-   top: 0;
-   left: 50%;
-   transform: translate(-50%,-50%) scale(0.1);
+h2{
    text-align: center;
-   padding: 0 30px 30px;
-   color: #333;
-   visibility: hidden;
-   transition: all  0.5s ease 2s;
+   margin-bottom: 1rem;
 }
 
-.open-popup{
-   visibility: visible;
-   top: 50%;
-   transform: translate(-50%,-50%) scale(1);
+
+.popup-section-after {
+  display: block;
 }
 
-.popup img{
-   width: 100px;
-   margin-top: -50px;
-   border-radius: 20px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.container-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.popup h2{
-   font-size: 38px;
-   font-weight: 500;
-   margin: 30px 0 10px;
+.container-popup .popup {
+  background: none;
+  /* align-items: center; */
+  margin: 0;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 2rem;
 }
 
-.popup button{
-   width: 100%;
-   margin-top: 50px;
-   padding: 10px 0;
-   background: #6fd649;
-   color: #fff;
-   border: 0;
-   outline: none;
-   font-size: 18px;
-   border-radius: 4px;
-   cursor: pointer;
-   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+.container-popup .popup img {
+  background: none;
+  width: 7rem;
+  display: flex;
+  margin: 0;
+  margin: 0 auto;
 }
 
+.container-popup .popup h2 {
+  background: none;
+  margin-top: 2rem;
+}
+
+.container-popup .popup p {
+  background: none;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.container-popup .popup button {
+  margin: 0 auto;
+  background-color: #094ca8;
+  color: white;
+  width: 7rem;
+  height: 3rem;
+  border-radius: 15px;
+  font-size: 15px;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.container-popup .popup button:hover {
+  background-color: #006aff;
+  transition: 1s ease;
+  transform: scale(1.05);
+}

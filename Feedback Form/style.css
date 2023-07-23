@@ -327,3 +327,16 @@ select#select option {
     transform: scale(1);
   }
 }
+
+
+.validation{
+  background: none;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.validation h5{
+  color: red;
+  font-weight: 600;
+  /* display: none; */
+}

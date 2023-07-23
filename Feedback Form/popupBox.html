@@ -3,18 +3,21 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="popupBox.css">
-   <title>Document</title>
+   <title>Thank you for your Feedback</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+   <link rel="stylesheet" href="./popupBox.css">
+   <link rel="stylesheet" href="../external.css">
 </head>
 <body>
-   <div class="container">
-      <div class="popup" id="popup">
-         <img src="./Assert/404-tick.png" alt="">
-         <h2>Thank You!</h2>
-         <p>Your Details Has been Successfully Submitted</p>
-         <button onclick="closePopup()">OK</button>
+   <section class="popup-section" id="section">
+      <div class="container-popup">
+        <div class="popup" id="popup">
+          <img src="./Assert/404-tick.png" alt="" />
+          <h2>Thank You!</h2>
+          <p>Your Details Has been Successfully Submitted</p>
+          <button onclick="window.location.href='../Feedback Form/index.html'" id="popup-submit">OK</button>
+        </div>
       </div>
-   </div>
-   <script src="./script.js"></script>
+    </section>
 </body>
 </html>
