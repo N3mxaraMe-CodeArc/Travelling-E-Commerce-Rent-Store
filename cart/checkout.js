@@ -33,7 +33,6 @@
       var row = document.createElement("tr");
 
       // Create table cells for each item detail
-      // var removeCell = document.createElement("td");
       var imageCell = document.createElement("td");
       var nameCell = document.createElement("td");
       var priceCell = document.createElement("td");
@@ -114,18 +113,8 @@
 
     // Update the total value
     totalSpan.textContent = cartItems.length;
-
   }
-  // Function to handle the checkout button click event
-  function openCheckout() {
-    if (cartItems.length === 0) {
-      alert("Your cart is empty. Please add items to proceed to checkout.");
-    } else {
-      // Proceed to checkout page
-      window.location.href = "checkout.html";
-    }
-  }
-
+  
   function clearForm() {
     document.getElementById("checkoutForm").reset();
   }
@@ -134,6 +123,7 @@
   function init() {
 
     document.getElementById("checkoutForm").addEventListener("submit", function (event) {
+      window.location.href = "pay.html"
       event.preventDefault(); // Prevent the form from submitting
 
       // You can replace the following alert with your own custom page redirect or message

@@ -103,8 +103,8 @@ nav ul {
   font-size: 0.6rem;
   height: 3rem;
   width: 6.5rem;
-  margin-left: 3rem;
-  padding-bottom: 0.6rem;
+  margin-left: 2rem;
+  padding-bottom: 0.3rem;
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
@@ -117,7 +117,7 @@ nav ul {
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border: none;
-  margin-top: 0;
+  margin-top: -12px;
   cursor: pointer;
 }
 
@@ -135,14 +135,14 @@ nav ul {
 .navlinks button:hover::after {
   right: auto;
   left: 0;
-  width: 100%;
+  width: 80%;
 }
 
 .navlinks button span {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 18px 25px;
+  padding: 0 auto;
   color: #fff;
   font-size: 1.125em;
   font-weight: 700;
@@ -157,6 +157,20 @@ nav ul {
   animation: scaleUp 0.3s ease-in-out;
 }
 
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 .cart-icon {
   background-image: url("./image/shopping.svg");
   background-position: center;
@@ -164,6 +178,7 @@ nav ul {
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
+  top: -4px;
   position: relative;
 }
 

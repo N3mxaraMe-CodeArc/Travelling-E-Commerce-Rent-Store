@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciept</title>
+    <link rel="stylesheet" href="pay.css">
+</head>
+
+<body>
+    <div class="card">
+        <button class="dismiss" type="button" id="remove-button">×</button>
+        <div class="header">
+            <div class="image">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="content">
+                <span class="title">Order Successfully Placed.</span>
+                <p class="message">Thank you for your purchase. you order will be delivered within 2 days of your
+                    purchase.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const removeButton = document.getElementById('remove-button');
+    const card = document.querySelector('.card');
+
+    removeButton.addEventListener('click', () => {
+        card.classList.add('remove-card');
+        window.location.href = "./shop.html";
+    });
+</script>
+</html>

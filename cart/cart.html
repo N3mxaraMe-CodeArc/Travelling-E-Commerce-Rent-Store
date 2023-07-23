@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Vista</title>
   <link rel="stylesheet" href="cart.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="./external.css">
   <link rel="icon" href="./image/logo.png" type="image/png"> 
 </head>
 <body>
@@ -13,19 +13,22 @@
     <img src="./image/logo.png" class="logo" />
     <nav class="navlinks">
       <ul class="navlinks-group">
-        <li class="nav-links"><a href="">home</a></li>
-        <li class="nav-links"><a href="shop.html" >shop</a></li>
-        <li class="nav-links"><a href="#">thumbnail</a></li>
+        <li class="nav-links"><a href="../Home2/index.html">home</a></li>
+        <li class="nav-links"><a href="../cart/shop.html">shop</a></li>
+        <li class="nav-links"><a href="../thumbnail/thumbnail.html">thumbnail</a></li>
         <li class="nav-links"><a href="#">sitemap</a></li>
+            <li class="nav-links"><a href="#">quiz</a></li>
         <li class="nav-links"><a href="#">aboutus</a></li>
-        <a class="active" href="cart.html">
+        <button onclick="window.location.href='../Feedback Form/feelings.html'">
+          <span style="background: none">support</span>
+          </button>
+        <a href="cart.html"  class="active">
           <li class="nav-links">
             <div class="cart-icon">
               <div class="total" id="cartTotal">0</div>
             </div>
           </li>
         </a>
-
       </ul>
     </nav>
   </header>   
