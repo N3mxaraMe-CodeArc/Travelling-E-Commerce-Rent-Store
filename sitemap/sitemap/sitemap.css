@@ -1,0 +1,13 @@
+* {
+    background-color: #00424d;
+   
+
+}
+.sitemap{
+    height: 100%;
+    width: 100%;
+    margin-left: 100px;
+}
+.sitemap rect:hover {
+    fill: #d8a840; /* Change the color to the desired color when hovering */
+  }

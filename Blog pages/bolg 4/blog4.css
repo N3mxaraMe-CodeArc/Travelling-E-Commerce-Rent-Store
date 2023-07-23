@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#navlist li{
+    display: inline;
+    padding-right: 20px;
+       
+}
+
+#navlist{
+    position: fixed;
+    left: 40%;
+    bottom: 95%;
+}
+
+.fieldset_images{
+    float: left;
+    margin-right: 10px;
+    height: 200px;
+    width: 250px;
+}
+ 
+.backtohome a{
+    margin-left: 5px;
+    float: left;
+    
+} 
+.editorpage a{
+    position: absolute;
+    left: 88%;
+}  

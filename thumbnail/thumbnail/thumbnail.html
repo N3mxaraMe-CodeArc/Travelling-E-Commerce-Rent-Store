@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail</title>
+    
+    <link rel="stylesheet" href="../../external.css">
+    <link rel="stylesheet" href="thumbnail.css">
+
+    <style>
+
+
+      </style>
+    
+</head>
+<body>
+    <header>
+        <img
+          src="../Home2/img/Black And White Rakia Design Studio Logo 1.png"
+          alt=""
+          class="logo"
+        />
+        <nav class="navlinks">
+          <ul class="navlinks-group">
+            <li class="nav-links"><a href="../Home2/index.html">home</a></li>
+            <li class="nav-links">
+              <a target="_blank" href="../cart/shop.html">shop</a>
+            </li>
+            <li class="nav-links"><a class="active" href="../thumbnail/thumbnail.html">thumbnail</a></li>
+            <li class="nav-links"><a href="../sitemap/sitemap.html">sitemap</a></li>
+            <li class="nav-links"><a href="#">quiz</a></li>
+            <li class="nav-links"><a href="#">aboutus</a></li>
+            <button onclick="window.location.href='../Feedback Form/feelings.html'">
+            <span style="background: none">support</span>
+            </button>
+          </ul>
+        </nav>
+      </header>
+      <div class="theme-selector">
+        <label for="theme-select">Color</label>
+            <select id="theme-select">
+                <option value="default">Default</option>
+                <option value="Random">Random Color</option>
+                <option value="lightY">Light Yellow</option>
+                <option value="lightG">Light Green</option>
+            </select>
+      </div>
+      <div class="font-selector">
+        <label for="font-select">Font</label>
+            <select id="font-size-select">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+    <div class="container">
+        <div class="slider">
+            <div class="item" style="background-image: url('https://img.freepik.com/premium-photo/couple-love-rock-admires-beautiful-views-boy-girl-rock-couple-love-travels-couple-sri-lanka-honeymoon-asia-man-woman-sigiriya-couple-mountains_135372-806.jpg?w=740');">
+                <div class="content">
+                    <div class="name">Travel Destinations</div>
+                    <div class="des">Exquisite travel treasures from enchanting destinations worldwide. Discover, explore, and journey today!</div>
+                    <button type="button" onclick="window.open(destinations)">Watch Full Video</button><br><br>
+                    <a href="#fieldset1">
+                        <button onclick="showFieldset(1)">Show Details</button>
+                    </a>
+
+                    
+
+                </div>
+            </div> 
+               
+            <div class="item" style="background-image: url('https://img.freepik.com/free-photo/female-tourists_1150-7272.jpg?w=740&t=st=1689789071~exp=1689789671~hmac=7103364ea3309b68952ec6fc716809ff995e3bd78f62221a5918e05e39db019e');">
+                <div class="content">
+                    <div class="name">Travelling Equipments</div>
+                    <div class="des">"Your one-stop shop for quality travel gear and accessories."</div>
+                    <button type="button" onclick="window.open(equipments)">Watch Full Video</button><br><br>
+                    <a href="#fieldset2">
+                        <button onclick="showFieldset(2)">Show Details</button>
+                    </a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('https://img.freepik.com/free-photo/woman-tourist-taking-photo-doi-luang-chiang-dao-mountains-chiang-mai-thailand_335224-1348.jpg?w=740&t=st=1689823948~exp=1689824548~hmac=83da498b3cdda6a0a75de5bbcd50199fb0acd6f5ecefb9fd8658d3a5a4b69f83');">
+                <div class="content">
+                    <div class="name">Solo Travelling</div>
+                    <div class="des">Adventurous gear and essentials for fearless solo travelers.</div>
+                    <button type="button" onclick="window.open(solotravelling)">Watch Full Video</button><br><br>
+                    <a href="#fieldset3">
+                        <button onclick="showFieldset(3)">Show Details</button>
+                    </a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('https://img.freepik.com/premium-photo/elephant-trekking-through-jungle-northern-laos_73899-396.jpg?w=740');">
+                <div class="content">
+                    <div class="name">Travel Tips and Hacks</div>
+                    <div class="des">Smart advice for smoother and more enjoyable travel experiences.</div>
+                    <button type="button" onclick="window.open(tips)">Watch Full Video</button><br><br>
+                    <a href="#fieldset4">
+                        <button onclick="showFieldset(4)">Show Details</button>
+                    </a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('https://img.freepik.com/free-photo/woman-enjoying-rice-terrace-viewpoint-green-forest-nan-thailand_335224-1079.jpg?w=740&t=st=1689824533~exp=1689825133~hmac=e0f34a9c7bc2688f5049c09963fedf60a269f2e66dd25f88329b91f317095f91');">
+                <div class="content">
+                    <div class="name">Cultural Immersion</div>
+                    <div class="des">Immerse in rich traditions and local customs around the world.</div>
+                    <button type="button" onclick="window.open(culture)">Watch Full Video</button><br><br>
+                    <a href="#fieldset5">
+                        <button onclick="showFieldset(5)">Show Details</button>
+                    </a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('https://img.freepik.com/free-photo/halves-coconut-filled-with-stew-leaves_23-2148494735.jpg?w=740&t=st=1689824769~exp=1689825369~hmac=334dc9c799cd0ddc035815586994ec9de52345be65ec869e353ad18fef22850b');">
+                <div class="content">
+                    <div class="name">Food and Culinary Adventures</div>
+                    <div class="des">Delightful gastronomic journeys with global flavors and delectable discoveries.</div>
+                    <button type="button" onclick="window.open(food)">Watch Full Video</button><br><br>
+                    <a href="#fieldset6">
+                        <button onclick="showFieldset(6)">Show Details</button>
+                    </a>
+                </div>
+            </div>
+           
+              
+        </div>
+        <div class="button">
+            <button class="prev"><img width="64" height="64" src="https://cdn-icons-png.flaticon.com/512/10023/10023119.png" alt="circled-chevron-left"/></button>
+            <button class="next"><img width="64" height="64" src="https://cdn-icons-png.flaticon.com/512/10023/10023120.png" alt="circled-chevron-right"/></button>
+        </div>
+
+    </div>
+    <fieldset id="fieldset1">
+        <legend>Travel Destinations</legend>
+        <img class="fieldset_images" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Beauty_of_Sigiriya_by_Binuka.jpg" alt="">
+        <p>Sri Lanka, a tropical paradise in the Indian Ocean, beckons travelers with its rich history, vibrant culture, and stunning landscapes. Colombo, the bustling capital, offers a blend of modernity and tradition, with its bustling markets, colonial-era architecture, and vibrant nightlife. The ancient city of Anuradhapura showcases magnificent ruins of temples and stupas, offering a glimpse into the country's impressive heritage.
+
+            For nature enthusiasts, the lush tea plantations of Nuwara Eliya provide picturesque views, and the nearby Horton Plains National Park boasts breathtaking hiking trails and the striking World's End cliff. Travelers seeking wildlife encounters can head to Yala National Park, home to leopards, elephants, and various bird species.
+            
+            Sri Lanka's coastal regions offer exquisite beaches. Unawatuna's golden shores are ideal for relaxation and water sports, while Mirissa offers the chance to spot majestic blue whales and playful dolphins on thrilling boat tours.
+            
+            The cultural triangle, encompassing Sigiriya, Polonnaruwa, and Dambulla, showcases ancient ruins, towering rock fortresses, and intricately adorned cave temples.
+            
+            A visit to Kandy, the cultural heart of the country, is incomplete without witnessing the renowned Temple of the Tooth, where the sacred tooth relic of Buddha is preserved.
+            
+            Lastly, Ella's picturesque hill station offers awe-inspiring views, diverse trekking options, and the iconic Nine Arch Bridge.
+            
+            </p>
+    </fieldset>
+    <fieldset id="fieldset2">
+        <legend>Travelling Equipments</legend>
+        <img class="fieldset_images" src="https://images.pexels.com/photos/16540903/pexels-photo-16540903/free-photo-of-a-man-in-mountains-taking-a-photo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <p>Traveling equipment refers to essential items and gear that one should pack and carry while embarking on a journey. These items are crucial for ensuring a comfortable and safe trip. The first and most vital equipment is a sturdy and spacious travel backpack or suitcase to hold all belongings securely. A set of packing cubes helps to organize clothes efficiently, while a TSA-approved lock adds an extra layer of security.
+
+            For travel documents and money, a durable passport holder and a travel wallet are indispensable. A universal travel adapter ensures that electronic devices can be charged in different countries. Additionally, a portable charger is essential for keeping smartphones and other gadgets powered during long journeys.
+            
+            To capture cherished moments, a high-quality camera or smartphone with good photography capabilities is a must. Moreover, a compact and lightweight tripod enhances the stability of shots. Travelers should also carry a first-aid kit containing basic medical supplies and medication.
+            
+            Appropriate clothing, including versatile outfits suitable for different weather conditions, should be packed. Comfortable walking shoes are crucial for exploring new destinations. Other miscellaneous items like a reusable water bottle, travel-sized toiletries, and a foldable daypack prove to be highly convenient during excursions.
+            
+            </p>
+    </fieldset>
+    <fieldset id="fieldset3">
+        <legend>Solo Travelling</legend>
+        <img class="fieldset_images" src="https://images.pexels.com/photos/206543/pexels-photo-206543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        <p>Embark on a captivating solo journey to Sri Lanka and immerse yourself in a land of diverse landscapes, rich culture, and warm hospitality. This tropical island nation, nestled in the Indian Ocean, promises an unforgettable experience for the adventurous solo traveler.
+
+            Explore the lush green tea plantations in the misty hills of Nuwara Eliya, where you can savor the finest Ceylon tea and witness breathtaking panoramas. Head to the ancient city of Sigiriya and climb the iconic rock fortress to admire awe-inspiring frescoes and stunning views of the surrounding plains.
+            
+            For a serene escape, visit the golden beaches of Mirissa or Unawatuna, where you can unwind and enjoy the tranquil waters of the Indian Ocean. Embrace spirituality at the sacred Temple of the Tooth in Kandy or the peaceful Dambulla Cave Temples, showcasing intricate Buddhist art.
+            
+            As you traverse the island's wild national parks, catch glimpses of majestic elephants, leopards, and colorful birdlife. Don't miss the chance to spot the graceful blue whales off the southern coast during a memorable whale-watching expedition.
+            
+            Indulge in mouthwatering Sri Lankan cuisine, filled with aromatic spices and tropical flavors, while engaging with friendly locals who will undoubtedly enrich your travel experience. Solo traveling in Sri Lanka promises an adventure filled with cultural discoveries, natural wonders, and unforgettable memories.</p>
+    </fieldset>
+    <fieldset id="fieldset4">
+        <legend>Travel Tips and Hacks</legend>
+        <img class="fieldset_images" src="https://www.eventbrite.co.uk/blog/wp-content/uploads/2022/06/tourists-768x512.jpg" alt="">
+        <p>Sri Lanka, with its stunning landscapes, rich history, and vibrant culture, is a captivating travel destination. To make the most of your trip, consider these travel tips and hacks. Firstly, plan your itinerary wisely to cover the diverse attractions the country offers, from ancient ruins to lush tea plantations and pristine beaches.
+
+            When it comes to transportation, opt for trains and buses, which are affordable and offer picturesque journeys through the countryside. Tuk-tuks are also a fun way to explore local areas. Be sure to taste the local cuisine, which is a delightful blend of flavors, and don't miss out on trying some of the famous Ceylon tea.
+            
+            To save on accommodation costs, consider staying in guesthouses or homestays, where you can experience warm Sri Lankan hospitality. Be respectful of the local customs and traditions, especially when visiting temples and religious sites.
+            
+            Pack lightweight clothing as the weather can be humid, but also carry a light sweater for cooler hill regions. Don't forget mosquito repellent and sunscreen.
+            
+            Lastly, engage with the friendly locals and immerse yourself in their customs for a more authentic experience. With these tips in mind, you're sure to have a memorable and enjoyable journey through the enchanting island of Sri Lanka.</p>
+    </fieldset>
+    <fieldset id="fieldset5">
+        <legend>Cultural Immersion</legend>
+        <img class="fieldset_images" src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1530794516017/shutterstock-470724314_main_1530794571986.jpeg" alt="">
+        <p>Sri Lanka, a teardrop-shaped island in the Indian Ocean, offers an enchanting cultural immersion like no other. Steeped in rich history and vibrant traditions, this tropical paradise beckons travelers to explore its diverse cultural tapestry.
+
+            Visitors can begin their journey in ancient cities like Anuradhapura and Polonnaruwa, where towering stupas and magnificent ruins reveal the country's deep-rooted Buddhist heritage. The sacred Temple of the Tooth in Kandy stands as a testament to the island's spiritual significance and hosts captivating religious festivals that mesmerize the senses.
+            
+            Immersing oneself in Sri Lanka's culture also involves experiencing its traditional performing arts, such as captivating Kandyan dances and soul-stirring drum recitals. The island's distinct culinary delights, infused with aromatic spices and fresh ingredients, are a true gastronomic adventure.
+            
+            The warmth and hospitality of the locals, always ready to share their customs and stories, enhance the cultural experience. Whether partaking in a traditional village homestay or joining a vibrant local festival, travelers will feel a deep connection to the heart and soul of Sri Lanka.
+            
+            Cultural immersion in Sri Lanka is a voyage of discovery, awakening a profound appreciation for the island's heritage and fostering unforgettable memories that will resonate for a lifetime.</p>
+    </fieldset>
+    <fieldset id="fieldset6">
+        <legend>Food and Culinary Adventures</legend>
+        <img class="fieldset_images" src="https://capitalwindkalpitiya.com/wp-content/uploads/2020/09/9248cb0d-8d44-4070-a68f-5df9dcffe955-scaled.jpeg" alt="">
+        <p>Sri Lanka, a tropical paradise, offers a delightful array of food and culinary adventures that tantalize the taste buds of every traveler. Rich in spices and influenced by its diverse cultural heritage, Sri Lankan cuisine is a fusion of flavors and aromas, leaving a lasting impression on anyone fortunate enough to indulge.
+
+            The island's signature dish, "rice and curry," is a must-try, featuring an assortment of vibrant curries made from vegetables, meats, or seafood, accompanied by fluffy rice. The use of aromatic spices like cinnamon, cardamom, and cloves imparts a unique character to the dishes. For those seeking a fiery kick, the traditional "hoppers" – bowl-shaped pancakes made from rice flour and coconut milk – served with spicy sambals, offer a burst of flavor.
+            
+            Seafood lovers will rejoice in the abundance of fresh catches, prepared with coconut milk or exotic spices. The bustling local markets offer a glimpse into Sri Lanka's culinary heritage, where aromatic spices, tropical fruits, and street food delights abound.
+            
+            Exploring Sri Lanka's culinary wonders extends beyond eating; engaging in cooking classes allows visitors to learn the art of creating authentic dishes. Additionally, sipping on Ceylon tea, renowned worldwide for its exceptional taste and aroma, is a ritual in itself.
+            
+            Embarking on a food and culinary adventure in Sri Lanka is an immersive experience that not only satisfies the appetite but also unveils the country's vibrant culture and history through its flavors.</p>
+    </fieldset>
+
+
+    <footer>
+        <div class="frist-row-footer">
+          <div class="f-logo-footer">
+            <img
+              src="../../Travelling-E-Commerce-Rent-Store/Home2/img/footer image/logoFooter.png"
+              alt=""
+              class="logo-footer"
+            />
+          </div>
+          <div class="s-topl-footer">
+            <h3 style="background: none" class="footer-top-heading">TOP LINKS</h3>
+            <div style="background: none" class="footer-t-items">
+              <div style="background: none" class="footer-top-items1">
+                <a href="#" class="items-t-footer">HOME</a>
+                <a href="#" class="items-t-footer">SHOP</a>
+                <a href="#" class="items-t-footer">FEEDBACK</a>
+              </div>
+              <div style="background: none" class="footer-top-items2">
+                <a href="#" class="items-t-footer">ABOUT US</a>
+                <a href="#" class="items-t-footer">THUMBNAIL</a>
+                <a href="#" class="items-t-footer">CHECKOUT</a>
+              </div>
+            </div>
+          </div>
+          <div style="background: none" class="t-exter-footer">
+            <h3 style="background: none" class="footer-ex-links">
+              EXTERNAL LINKS
+            </h3>
+            <div class="items-ex-footer">
+              <a href="#" class="items-t-footer">SITE MAP</a>
+              <a href="#" class="items-t-footer">EXTERNAL SOURCES</a>
+              <a href="../Page Editors/Student1/student1.html" class="items-t-footer">PAGE EDITOR</a>
+            </div>
+          </div>
+          <div class="t-email-footer">
+            <h3 style="background: none" class="footwe-news-head">NEWS LETTER</h3>
+            <div style="background: none" class="input-group">
+              <input
+                type="email"
+                class="input-email"
+                id="Email"
+                name="Email"
+                placeholder="codearcade@ca20.lk"
+                required="true"
+              />
+              <input class="button--submit" value="Subscribe" type="submit" />
+            </div>
+            <div style="background: none" class="imgpayment">
+              <img
+                style="background: none"
+                src="../Home2/img/footer image/pay 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="followus">
+            <h3 style="background: none" class="follow">Follow us</h3>
+            <div style="background: none" class="socialicon1">
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Facebook v1_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Instagram_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+            </div>
+            <div style="background: none" class="socialicon1">
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Linkedin_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+              <a class="social-media-icon" href="#"
+                ><img
+                  class="social-media-icon"
+                  src="../Home2/img/footer image/🦆 icon _Twitter_.png"
+                  alt=""
+                  srcset=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="second-row-footer">
+          <h3 class="product-text">@2023 POWERED BY CA2.0</h3>
+        </div>
+      </footer>
+    
+
+    <script src="thumbnail.js"></script>
+</body>
+</html>

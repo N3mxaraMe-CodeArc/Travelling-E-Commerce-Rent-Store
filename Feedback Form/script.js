@@ -37,18 +37,22 @@ const SubmitHandler = () => {
    if (!nameValid(firstName)) {
       document.getElementById("name-validation-alert").innerHTML = "Enter the Valid Name"
       document.getElementById("firstName").style.border = "1px solid red";
+      alert("Please enter a valid name")
    }
    else if(!nameValid(lastName)){
       document.getElementById("name-validation-alert").innerHTML = "Enter the Valid Name"
       document.getElementById("lastName").style.border = "1px solid red";
+      alert("Please enter a valid name")
    }
    else if(!emailValid(email)){
       document.getElementById("name-validation-alert").innerHTML = "Enter the Valid Email"
       document.getElementById("email").style.border = "1px solid red";
+      alert("Please enter a Email Address")
    }
    else if(numberValid(num) && num.length != 10){
-      document.getElementById("name-validation-alert").innerHTML = "Enter the Valid Contact"
+      document.getElementById("name-validation-alert").innerHTML = "Enter the Valid Contact Number"
       document.getElementById("phoneNum").style.border = "1px solid red";
+      alert("Please enter a valid Contact Number")
    }
    else{
       document.getElementById("name-validation-alert").innerHTML = ""
