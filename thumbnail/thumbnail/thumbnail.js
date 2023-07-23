@@ -64,34 +64,31 @@ function getRandomColor() {
   }
   return color;
 }
-// Get references to the elements
-const fontSizeSelector = document.getElementById('font-size-select');
-const body1 = document.body; // Change this line to target the body element directly
 
-// Function to apply the selected font size
+const fontSizeSelector = document.getElementById('font-size-select');
+const body1 = document.body; 
+
+
 function applyFontSize(fontSize) {
   body1.style.fontSize = fontSize;
   
-  // Store the selected font size in local storage
+
   localStorage.setItem('font-size', fontSize);
 }
 
-// Event listener for font size selector changes
 fontSizeSelector.addEventListener('change', function() {
   const selectedFontSize = fontSizeSelector.value;
   applyFontSize(selectedFontSize);
 });
 
-// Set the initial font size based on the user's preference (you can use local storage to remember the font size selection across page loads)
 const userPreferredFontSize = localStorage.getItem('font-size');
 if (userPreferredFontSize) {
   fontSizeSelector.value = userPreferredFontSize;
   applyFontSize(userPreferredFontSize);
 } else {
-  // If no font size is set in local storage, set the default font size
+
   applyFontSize('medium');
 }
-// Hide all fieldsets initially
 const fieldsets = document.querySelectorAll('fieldset');
 fieldsets.forEach(fieldset => {
     fieldset.style.display = "none";
