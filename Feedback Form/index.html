@@ -19,6 +19,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="icon"
+      href="../Home2/img/Black And White Rakia Design Studio Logo 1.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="../Home2/style.css" />
     <link rel="stylesheet" href="../external.css" />
     <link rel="stylesheet" href="style.css" />
@@ -62,13 +67,14 @@
           <div class="name">
             <h5>First Name</h5>
             <input id="firstName" style="margin-right: 5rem" type="text" />
-            
+
             <h5 style="margin-left: 2rem">Last Name</h5>
             <input id="lastName" type="text" />
           </div>
           <div class="contact">
             <h5 style="margin-left: 3rem">Contact</h5>
             <input
+            id="phoneNum"
               style="margin-right: 1.5rem"
               type="number"
               required="true"
@@ -271,7 +277,7 @@
                 <th>Content</th>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="week" name="option1" checked="checked" />
+                    <input type="checkbox" value="week" name="option1" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -283,13 +289,13 @@
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="very-good" name="option1"/>
+                    <input type="checkbox" value="very-good" name="option1" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="Excellent" name="option1"/>
+                    <input type="checkbox" value="Excellent" name="option1" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -298,7 +304,7 @@
                 <th>Blog Post</th>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="week" name="option2" checked="checked" />
+                    <input type="checkbox" value="week" name="option2" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -310,13 +316,13 @@
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="very-good" name="option2"/>
+                    <input type="checkbox" value="very-good" name="option2" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="Excellent" name="option2"/>
+                    <input type="checkbox" value="Excellent" name="option2" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -325,7 +331,7 @@
                 <th>Detail</th>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="week" name="option3" checked="checked" />
+                    <input type="checkbox" value="week" name="option3" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -337,13 +343,13 @@
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="very-good" name="option3"/>
+                    <input type="checkbox" value="very-good" name="option3" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="Excellent" name="option3"/>
+                    <input type="checkbox" value="Excellent" name="option3" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -352,7 +358,7 @@
                 <th>Rent Shop</th>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="week" name="option4" checked="checked" />
+                    <input type="checkbox" value="week" name="option4" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -364,13 +370,13 @@
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="very-good" name="option4"/>
+                    <input type="checkbox" value="very-good" name="option4" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
                 <td>
                   <label class="check-container">
-                    <input type="checkbox" value="Excellent" name="option4"/>
+                    <input type="checkbox" value="Excellent" name="option4" />
                     <div class="checkmark"></div>
                   </label>
                 </td>
@@ -378,13 +384,22 @@
             </table>
           </div>
 
-          <div style="background: none" class="submitbtn-feedback">
-            <input
-            onclick="SubmitHandler()"
+          <div
+            style="background: none; display: flex"
+            class="submitbtn-feedback"
+          >
+            <button
+              onclick="SubmitHandler()"
               type="submit"
               class="button-submit-feedback"
               value="Submit"
-            />
+            >Submit</button>
+            <button
+              onclick="window.location.href='../Feedback Form/popupbox.html'"
+              class="button-submit-feedback"
+            >
+              Done
+            </button>
           </div>
         </form>
       </section>
@@ -398,7 +413,9 @@
             />
           </div>
           <div class="s-topl-footer">
-            <h3 style="background: none" class="footer-top-heading">TOP LINKS</h3>
+            <h3 style="background: none" class="footer-top-heading">
+              TOP LINKS
+            </h3>
             <div style="background: none" class="footer-t-items">
               <div style="background: none" class="footer-top-items1">
                 <a href="#" class="items-t-footer">HOME</a>
@@ -419,11 +436,17 @@
             <div class="items-ex-footer">
               <a href="#" class="items-t-footer">SITE MAP</a>
               <a href="#" class="items-t-footer">EXTERNAL SOURCES</a>
-              <a href="../Page Editors/Student1/student1.html" class="items-t-footer">PAGE EDITOR</a>
+              <a
+                href="../Page Editors/Student1/student1.html"
+                class="items-t-footer"
+                >PAGE EDITOR</a
+              >
             </div>
           </div>
           <div class="t-email-footer">
-            <h3 style="background: none" class="footwe-news-head">NEWS LETTER</h3>
+            <h3 style="background: none" class="footwe-news-head">
+              NEWS LETTER
+            </h3>
             <div style="background: none" class="input-group">
               <input
                 type="email"

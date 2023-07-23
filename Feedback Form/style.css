@@ -162,6 +162,14 @@ form .button-submit-feedback {
   /* display: flex; */
 }
 
+.form .button-submit-feedback:hover{
+  background-color: #006aff;
+  transform: scale(1.03);
+  transition: 1s ease;
+}
+
+
+
 .submitbtn-feedback {
   display: grid;
   justify-content: end;
